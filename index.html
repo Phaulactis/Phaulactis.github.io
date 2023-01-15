@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="js/script.js"></script>
+        <title>Sarcophaga</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <meta name = "description" content="Key to Sarcophaga of Sweden"> 
+       
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body> 
+     <header class="Title">
+       <h2>Key to swedish species of Homolobus</h2>
+     </header>
+        <div class="Main">
+            <section class="Text Container"> 
+            </section>
+            <div class="scrollbox">
+                <div class="scrollbox-inner">
+                    
+                </div>
+                
+            </div>
+            <nav class="leftbar">
+                
+                <div class="scrollbox">
+                    <div class="scrollbox-inner">
+                        <div class="mainbar" id = "m1"> 
+                          
+                            <button class = "btn btn-head" id="b0" onclick="Open('m1')" type ="button" >      Color</button><br>
+                            <span class="material-symbols-outlined" id = "am1">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "101"onclick="Step(1, 0, 'b11')" type ="button">Body redish brown to orange</button> 
+                                <button class = "btn btn-key" id = "201" onclick="Step(2, 0, 'b21')" type ="button">Body extensively blackish brown</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" >
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "102"onclick="Step(1, 0, 'b12')" type ="button">Body redish brown to organge</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <button class = "btn btn-key" id = "202" onclick="Step(2, 0, 'b22')" type ="button">Body extensively blackish brown</button><br>
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div> 
+                            
+                               
+                        </div>
+                        <div class="mainbar" id = "m2">   
+                            <button class = "btn btn-head" id="b1" onclick="Open('m2')" type ="button">      Hind wing marginal cell</button><br>
+                            <span class="material-symbols-outlined" id = "am2">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "111"onclick="Step(1, 1, 'b13')" type ="button">Marginal cell of hind wing with cross vein</button> 
+                                <button class = "btn btn-key" id = "211" onclick="Step(2, 1, 'b23')" type ="button">Marginal cell of hind wing without cross vein</button><br>
+                                <img class = "img-res" src="wing1.png" >
+                                <img class = "img-res" src="wing2.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "112"onclick="Step(1, 1, 'b14')" type ="button">Marginal cell of hind wing with cross vein</button> <br>
+                                <img class = "img-res" src="wing1.png" ><br>
+                                <button class = "btn btn-key" id = "212" onclick="Step(2, 1, 'b24')" type ="button">Marginal cell of hind wing without cross vein</button><br>
+                                <img class = "img-res" src="wing2.png" ><br>
+                            </div> 
+                            
+                        </div>
+                        <div class="mainbar" id = "m3">   
+                            <button class = "btn btn-head" id="b2" onclick="Open('m3')" type ="button">      Malar space</button><br>
+                            <span class="material-symbols-outlined" id = "am3">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "121"onclick="Step(1, 2, 'b15')" type ="button">Malar space at least as long as the basal width of the mandibles</button> 
+                                <button class = "btn btn-key" id = "221" onclick="Step(2, 2, 'b25')" type ="button">Malar space at most 0.7 times the basal legth of the mandibles</button><br>
+                                <img class = "img-res" src="malar1.png" >
+                                <img class = "img-res" src="malar2.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "122"onclick="Step(1, 2, 'b16')" type ="button">Malar space at least as long as the basal width of the mandibles</button><br>
+                                <img class = "img-res" src="malar1.png" ><br>
+                                <button class = "btn btn-key" id = "222" onclick="Step(2, 2, 'b26')" type ="button">Malar space at most 0.7 times the basal legth of the mandibles</button><br>
+                                <img class = "img-res" src="malar2.png" ><br>
+                            </div> 
+   
+                        </div>
+                        <div class="mainbar" id = "m4">   
+                            <button class = "btn btn-head" id="b3" onclick="Open('m4')" type ="button">      Wing vein 1A + 2A</button><br>
+                            <span class="material-symbols-outlined"id = "am4">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "131"onclick="Step(1, 3, 'b17')" type ="button">Wing vein 1A + 2A curved</button> 
+                                <button class = "btn btn-key" id = "231" onclick="Step(2, 3, 'b27')" type ="button">Wing vein 1A + 2A more or less straight</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" >
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "132"onclick="Step(1, 3, 'b18')" type ="button">Wing vein 1A + 2A curved</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <button class = "btn btn-key" id = "232" onclick="Step(2, 3, 'b28')" type ="button">Wing vein 1A + 2A more or less straight</button><br>
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div> 
+                            
+                        </div>
+                        <div class="mainbar" id = "m5">   
+                            <button class = "btn btn-head" id="b4" onclick="Open('m5')" type ="button">      Claws</button><br>
+                            <span class="material-symbols-outlined" id = "am5">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "141"onclick="Step(1, 4, 'b19')" type ="button">Tarsal claws with at least single small tooth or lamella </button> 
+                                <button class = "btn btn-key" id = "241" onclick="Step(2, 4, 'b29')" type ="button">Tarsal claws simple, without tooth or lamella</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" >
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "142"onclick="Step(1, 4, 'b111')" type ="button">Tarsal claws with at least single small tooth or lamella </button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <button class = "btn btn-key" id = "242" onclick="Step(2, 4, 'b211')" type ="button">Tarsal claws simple, without tooth or lamella</button><br>
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div> 
+                            
+                        </div>
+                        <div class="mainbar" id = "m6">   
+                            <button class = "btn btn-head" id="b5"  onclick="Open('m6')" type ="button">      Wing vein Sr</button><br>
+                            <span class="material-symbols-outlined" id = "am6">chevron_right</span>
+
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "151"onclick="Step(1, 5, 'b122')" type ="button">Wing vein Sr distinctively thinner than the basal part of vein SC-R1</button> 
+                                <button class = "btn btn-key" id = "251" onclick="Step(2, 5, 'b222')" type ="button">Wing vein Sr about as thick as the basal part of vein SC-R1</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" >
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "152"onclick="Step(1, 5, 'b133')" type ="button">Wing vein Sr distinctively thinner than the basal part of vein SC-R1</button> <br>
+                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <button class = "btn btn-key" id = "252" onclick="Step(2, 5, 'b233')" type ="button">Wing vein Sr about as thick as the basal part of vein SC-R1</button><br>
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div> 
+
+                            
+                        </div>
+                        <div class="mainbar" id = "m7">   
+                            <button class = "btn btn-head" id="b6" onclick="Open('m7')" type ="button">      Hind tarsus</button><br>
+                            <span class="material-symbols-outlined" id = "am7">chevron_right</span>
+                            
+                            <div class="obj1">
+                                <button class = "btn btn-key" id = "161"onclick="Step(1, 6, 'b144')" type ="button">Hind tarsus distinctively brighter in coloration than the hind tibia*</button>
+                                <button class = "btn btn-key" id = "261" onclick="Step(2, 6, 'b244')" type ="button">Hind tarsus about the samle color as the hind tibia</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" >
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div>  
+                            <div class="obj2">
+                                <button class = "btn btn-key" id = "162"onclick="Step(1, 6, b1)" type ="button">Hind tarsus distinctively brighter in coloration than the hind tibia*</button><br>
+                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <button class = "btn btn-key" id = "262" onclick="Step(2, 6, b2)" type ="button">Hind tarsus about the samle color as the hind tibia</button><br>
+                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                            </div> 
+
+                            
+                        </div>
+                </div>
+                
+             </nav>
+            <nav class="sidebar">
+                <header id = "key"><h2>Remaining taxa</h2></header>
+                <div class="scrollbox">
+                    <div class="scrollbox-inner">
+                        <button class = "btn btn-spec" id = 0e type ="button">Homolobus infumator</button><br>
+                        <button class = "btn btn-spec" id = 1e  type ="button">Homolobus annulicornis</button><br>
+                        <button class = "btn btn-spec" id = 2e type ="button">Homolobus discolor</button><br>
+                        <button class = "btn btn-spec" id = 3e type ="button">Homolobus bohemani</button><br>
+                        <button class = "btn btn-spec" id = 4e type ="button">Homolobus flagitator</button><br>
+                        <button class = "btn btn-spec" id = 5e type ="button">Homolobus truncator</button><br>
+                </div>
+                
+             </nav>
+             
+             
+             
+        </div>
+         
+    <footer class="Footer" >
+        <nav class="nav Footer-nav">
+            <ul>
+               <strong><li><a href="https://twitter.com">Twitter</a></li></strong>
+               <strong><li><a href="https://youtube.com">Youtube</a></li></strong>
+               
+            </ul>
+        </nav>
+         
+     </footer>
+    </body>
+</html>
