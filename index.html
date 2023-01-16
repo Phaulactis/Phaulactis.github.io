@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-        <meta name = "description" content="Key to Sarcophaga of Sweden"> 
+        <meta name = "description" content="Key to Homolobus of Sweden"> 
        
         <link rel="stylesheet" href="styles.css"/>
     </head>
@@ -19,17 +19,14 @@
        <h2>Key to swedish species of Homolobus</h2>
      </header>
         <div class="Main">
-            <section class="Text Container"> 
-            </section>
-            <div class="scrollbox">
-                <div class="scrollbox-inner">
-                    
-                </div>
-                
+            <div class="top"> <div>Descriptors</div> <button class="reset" onclick="Reset()"></button>
             </div>
+            <div class="top2">
+                Remaining taxa
+            </div>
+            
             <nav class="leftbar">
-                
-                <div class="scrollbox">
+              <div class="scrollbox">
                     <div class="scrollbox-inner">
                         <div class="mainbar" id = "m1"> 
                           
@@ -94,14 +91,14 @@
                             <div class="obj1">
                                 <button class = "btn btn-key" id = "131"onclick="Step(1, 3, 'b17')" type ="button">Wing vein 1A + 2A curved</button> 
                                 <button class = "btn btn-key" id = "231" onclick="Step(2, 3, 'b27')" type ="button">Wing vein 1A + 2A more or less straight</button><br>
-                                <img class = "img-res" src="Homolobus infumator.png" >
-                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                                <img class = "img-res" src="1A2A1.png" >
+                                <img class = "img-res" src="1A2A2.png" ><br>
                             </div>  
                             <div class="obj2">
                                 <button class = "btn btn-key" id = "132"onclick="Step(1, 3, 'b18')" type ="button">Wing vein 1A + 2A curved</button><br>
-                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <img class = "img-res" src="1A2A1.png" ><br>
                                 <button class = "btn btn-key" id = "232" onclick="Step(2, 3, 'b28')" type ="button">Wing vein 1A + 2A more or less straight</button><br>
-                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                                <img class = "img-res" src="1A2A2.png" ><br>
                             </div> 
                             
                         </div>
@@ -112,14 +109,14 @@
                             <div class="obj1">
                                 <button class = "btn btn-key" id = "141"onclick="Step(1, 4, 'b19')" type ="button">Tarsal claws with at least single small tooth or lamella </button> 
                                 <button class = "btn btn-key" id = "241" onclick="Step(2, 4, 'b29')" type ="button">Tarsal claws simple, without tooth or lamella</button><br>
-                                <img class = "img-res" src="Homolobus infumator.png" >
-                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                                <img class = "img-res" src="Claw1.png" >
+                                <img class = "img-res" src="Claw2.png" ><br>
                             </div>  
                             <div class="obj2">
                                 <button class = "btn btn-key" id = "142"onclick="Step(1, 4, 'b111')" type ="button">Tarsal claws with at least single small tooth or lamella </button><br>
-                                <img class = "img-res" src="Homolobus infumator.png" ><br>
+                                <img class = "img-res" src="Claw1.png" ><br>
                                 <button class = "btn btn-key" id = "242" onclick="Step(2, 4, 'b211')" type ="button">Tarsal claws simple, without tooth or lamella</button><br>
-                                <img class = "img-res" src="Homolobus discolor.png" ><br>
+                                <img class = "img-res" src="Claw2.png" ><br>
                             </div> 
                             
                         </div>
@@ -164,8 +161,11 @@
                 </div>
                 
              </nav>
+             <div class="top3">
+                Remaining taxa
+            </div>
+            <br>
             <nav class="sidebar">
-                <header id = "key"><h2>Remaining taxa</h2></header>
                 <div class="scrollbox">
                     <div class="scrollbox-inner">
                         <button class = "btn btn-spec" id = 0e type ="button">Homolobus infumator</button><br>

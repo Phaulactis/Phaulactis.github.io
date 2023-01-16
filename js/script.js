@@ -38,16 +38,20 @@ window.onload= function(){
 	});
 	
 }
+function Reset(){
 
+	location.reload();
+
+}
 function Open(thing){
 	const thingie = document.getElementById(thing);
-
-	if(thingie.style.height === '4em'){
+	
+	if(thingie.style.height === '3.25em'){
 		thingie.style.height = 'auto';
 		document.getElementById("a"+thing).innerHTML = "expand_more";
 	}
 	else{
-		thingie.style.height = '4em';
+		thingie.style.height = '3.25em';
 		document.getElementById("a"+thing).innerHTML = "chevron_right";
 	}
 
@@ -63,16 +67,15 @@ function Step(value, index, id) {
 		steps[index] = 0;
 		isUnselect = true;
 		
-		document.getElementById("b"+index).style.backgroundColor = "rgb(212, 212, 212)";
+		document.getElementById("b"+index).style.backgroundColor = "rgb(243, 243, 243)";
 		if(value === 1){
-			document.getElementById("1" + index + "1").style.backgroundColor = "rgb(212, 212, 212)";
-			document.getElementById("1" + index + "2").style.backgroundColor = "rgb(212, 212, 212)";
+			document.getElementById("1" + index + "1").style.backgroundColor = "rgb(243, 243, 243)";
+			document.getElementById("1" + index + "2").style.backgroundColor = "rgb(243, 243, 243)";
 			
 		}
 		else{
-			console.log("e");
-			document.getElementById("2" + index + "1").style.backgroundColor = "rgb(212, 212, 212)";
-			document.getElementById("2" + index + "2").style.backgroundColor = "rgb(212, 212, 212)";
+			document.getElementById("2" + index + "1").style.backgroundColor = "rgb(243, 243, 243)";
+			document.getElementById("2" + index + "2").style.backgroundColor = "rgb(243, 243, 243)";
 		}
 
 	}
@@ -81,16 +84,16 @@ function Step(value, index, id) {
 		
 		document.getElementById("b"+index).style.backgroundColor = green;
 		if(value === 1){
-			document.getElementById("2" + index + "1").style.backgroundColor = "rgb(212, 212, 212)";
-			document.getElementById("2" + index + "2").style.backgroundColor = "rgb(212, 212, 212)";
+			document.getElementById("2" + index + "1").style.backgroundColor = "rgb(243, 243, 243)";
+			document.getElementById("2" + index + "2").style.backgroundColor = "rgb(243, 243, 243)";
 			document.getElementById("1" + index+  "1").style.backgroundColor = green;
 			document.getElementById("1" + index + "2").style.backgroundColor = green;
 		}
 		else{
 			document.getElementById("2" + index+  "1").style.backgroundColor = green;
 			document.getElementById("2" + index + "2").style.backgroundColor = green;
-			document.getElementById("1" + index+  "1").style.backgroundColor = "rgb(212, 212, 212)";
-			document.getElementById("1" + index + "2").style.backgroundColor = "rgb(212, 212, 212)";
+			document.getElementById("1" + index+  "1").style.backgroundColor = "rgb(243, 243, 243)";
+			document.getElementById("1" + index + "2").style.backgroundColor = "rgb(243, 243, 243)";
 		}
 		
 		
@@ -122,7 +125,7 @@ function Step(value, index, id) {
 
 
 		}
-	document.getElementById("key").innerHTML = steps.toString();
+	
 
 	 //hides all questions that won't do anything
 	 for (var i = 0; i < questions.length; ++i) {

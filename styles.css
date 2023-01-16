@@ -1,7 +1,7 @@
 *{
+
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
+  
 }
 
 
@@ -9,27 +9,28 @@ html, body{
     background-color: rgb(237, 237, 237);
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
 }
 
 ::-webkit-scrollbar{
-    width:  5px;
     
-    
+    width:  0px;
+   
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #fff;
-    
-    
-}
 
+    background: rgb(185, 185, 185);
+
+}
 
 .Title{
 
     background-color: rgb(57, 57, 57);
      color: white;
-     padding-bottom: 10px;
-     padding-Top: 10px;
+     padding-bottom: 15px;
+     padding-Top: 5px;
      margin: 0;
      text-align: center;
      font-size: 0.75em;
@@ -40,6 +41,7 @@ html, body{
 
     background-color: rgb(207, 207, 207);
     padding-top: 15px;
+    padding-bottom: 3em;
    
    
 }
@@ -50,16 +52,14 @@ html, body{
     background:rgb(146, 146, 146);
     float:left; 
     width: 100%;
-    height: 2.1em;
+    height: 3.25em;
     display:inline;
     text-align: center;
     overflow: hidden;
     border-radius: 0.3em;
     padding: 0;
     position: relative;
-    
-    
-    
+
 }
 
 .obj1{
@@ -73,6 +73,7 @@ html, body{
 }
 
 .leftbar {
+
     background:rgb(146, 146, 146); 
     margin: 0px 5%;
     padding:10px; 
@@ -82,13 +83,11 @@ html, body{
     display: flex;
     flex-direction: column;
     float:left;
-    border-radius: 0.8em;
-    
-    
-
+    border-radius: 0.5em;
+  
 }
-.sidebar {
 
+.sidebar {
     background:rgb(146, 146, 146); 
     padding:10px; 
     margin: 0px 5%;
@@ -97,10 +96,77 @@ html, body{
     display: flex;
     flex-direction: column;
     position:static;  
-    border-radius: 0.8em;
+    border-radius: 0.5em;
     
-
 }
+.top{
+   
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-right: 0%;
+    width: 90%;
+    float:left;
+    display: flex;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+
+    
+}
+
+.top2{
+   
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-left: 2%;
+    width: 28%;
+    float:left;
+    display: flex;
+    height: 3em;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+    display: none;
+}
+
+.top3{
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-left: 5%;
+    width: 90%;
+    float:left;
+    display: flex;
+    height: 3em;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+    
+}
+.reset{
+   
+    background-image: url(restart.png);
+    background-color: rgb(87, 87, 87); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0px;
+    width: 2.5em;
+    height: 2.5em;
+    right: 1%;
+    top: 15%;
+    color: rgb(54, 42, 42);
+    position: absolute;
+    cursor: pointer;
+}
+
 .btn {
 
     font-family: 'Roboto', sans-serif;
@@ -109,41 +175,38 @@ html, body{
     vertical-align: middle;
     cursor: pointer;
     text-align: left;
-    border-radius: 0.25em;
-    
+    border-radius: 0.2em;
+    color:rgb(12, 12, 12);
 }
 
 .btn-key{
-
-    padding-top: 0.2em;
-    padding-bottom: 0.4em;
-    font-size: 1.1em;
+  
+    font-size: 0.9em;
     margin-left: -1px;
     margin-right: -1px;
-    height: 4em;
+    height: 3.5em;
     min-height: 1em;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(243, 243, 243);
     width: 100%;
     background-size: cover;
     border-width: 1px;
     border-style:solid;
     border-color: rgb(61, 61, 61);
-    padding-top: 0.4em;
-    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 3em;
 }
 
 .btn-spec{
     padding-top: 0.2em;
     padding-bottom: 0.4em;
     font-size: 1em;
-    margin-left: -1px;
     margin-right: -1px;
     height: 3em;
-    background-color: rgb(212, 212, 212);
-    width: 98%;
-    margin-left: 0.5%;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    margin-bottom: 0.2em;
     background-size: cover;
     border-width: 1px;
     border-style:solid;
@@ -152,34 +215,34 @@ html, body{
 }
 .btn-head{
     white-space: pre-wrap;
-    padding-top: 0.8em;
-    padding-bottom: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 1.9em;
     height: 1.4em;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(243, 243, 243);
     width: 100%;
     background-size: cover;
     border-width: 1px;
     border-style:solid;
     border-color: rgb(61, 61, 61);
-    margin-bottom: 0.2em;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 0.05em;
 }
 
 .material-symbols-outlined{
     
-    font-size: 2.55em;
+    font-size: 2.2em;
     position: absolute;
     left: 0;
     top: 0.25em;
     pointer-events: none;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     
 }
 .img-res {
     
     width: 100%;
     border-radius: 0.3em;
-
+    margin-bottom: 0.5em;
     
 }
 .scrollbox {
@@ -237,21 +300,17 @@ html, body{
    
 }
 
-
-.btn-key:hover{
-
-    background-color:rgb(196, 196, 196);
-    
-}
-
-
 @media only screen and (min-width: 650px){
     
+    ::-webkit-scrollbar{
+        width:  10px;
+       
+    }
     .Title{
         background-color: rgb(57, 57, 57);
          color: white;
-         padding-bottom: 10px;
-         padding-Top: 10px;
+         padding-bottom: 1px;
+         padding-Top: 0.5px;
          margin: 0;
          text-align: center;
          font-size: 1.2em;
@@ -303,19 +362,57 @@ html, body{
     .Title{
         background-color: rgb(57, 57, 57);
          color: white;
-         padding-bottom: 15px;
-         padding-Top: 15px;
+         padding-bottom: 0.1px;
+         padding-Top: 0.5px;
          margin: 0;
          text-align: center;
-         font-size: 1.5em;
+         font-size: 1.3em;
          font-weight: normal;
      
     }
     
+    .top{
+   
+        background:rgb(87, 87, 87); 
+        color: rgb(243, 243, 243);
+        padding:10px; 
+        margin: 0px 5%;
+        margin-right: 0%;
+        width: 60%;
+        float:left;
+        display: flex;
+        height: 2.25em;
+        border-radius: 0.3em; 
+        position:relative;
+        font-size: 1.3em;
+    
+        
+    }
+    
+    .top2{
+       
+        background:rgb(87, 87, 87); 
+        color: rgb(243, 243, 243);
+        padding:10px; 
+        margin: 0px 5%;
+        margin-left: 2%;
+        width: 28%;
+        float:left;
+        display: flex;
+        height: 3em;
+        height: 2.25em;
+        border-radius: 0.3em; 
+        position:relative;
+        font-size: 1.3em;
+    }
 
+    .top3{
+       display: none;
+        
+    }
     .leftbar {
 
-        height: 60em;
+        height: 52em;
         margin: 0px 5%;
         margin-right: 2%;
         margin-bottom: 1em;
@@ -325,7 +422,7 @@ html, body{
     }
     .sidebar {
         
-        height: 60em;
+        height: 52em;
         margin: 0px 5%;
 
     }
