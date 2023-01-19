@@ -1,0 +1,516 @@
+*{
+
+    box-sizing: border-box;
+  
+}
+/* unvisited link */
+a{
+    text-decoration: none;
+}
+a:link {
+    color: rgb(0, 150, 125);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 150, 125);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+
+
+
+html, body{
+    background-color: rgb(207, 207, 207);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+::-webkit-scrollbar{
+    
+    width:  0px;
+   
+   
+}
+
+::-webkit-scrollbar-thumb{
+
+    background: rgb(207, 207, 207);
+   
+
+}
+
+#Menu{
+    position: absolute;
+    background-color: rgb(44, 44, 44);
+    height: 100%;
+    width: 0em;
+    z-index: 2;
+    overflow: hidden;
+    
+}
+#Overlay{
+    width: 1000em;
+    height: 100em;
+    background-color: rgba(66, 66, 66, 0.267);
+    z-index: 2;
+    position:fixed;
+    display: none;
+}
+.MenuItem{
+
+    display: flex;
+    z-index: 5;
+   
+    
+}
+
+#MenuIcon{
+  
+    position: absolute;
+    color: rgb(243, 243, 243);
+    fill: rgb(243, 243, 243);
+    margin: 1em;
+    z-index: 1;
+}
+.Title{
+
+    background-color: rgb(57, 57, 57);
+    color: rgb(243, 243, 243);
+    padding-bottom: 20px;
+    padding-Top: 0px;
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: normal;
+    height: 4.5em;
+ 
+}
+
+.Main{
+
+    background-color: rgb(207, 207, 207);
+    padding-top: 15px;
+    padding-bottom: 3em;
+   
+   
+}
+.mainbar{
+    
+    margin-bottom: 0.5em; 
+    margin-right: 1em;
+    background:rgb(230, 230, 230);
+    float:left; 
+    width: 100%;
+    height: 3.25em;
+    display:inline;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.3em;
+    padding: 0;
+    position: relative;
+
+}
+
+.obj1{
+   
+    display:none;
+}
+.obj2{
+
+    display:block;
+    width: 100%;
+}
+
+.leftbar {
+
+    background:rgb(230, 230, 230);
+    margin: 0px 5%;
+    padding:10px; 
+    margin-bottom: 1em;
+    width: auto;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    float:left;
+    border-radius: 0.5em;
+  
+}
+
+.sidebar {
+    background:rgb(230, 230, 230);
+    padding:10px; 
+    margin: 0px 5%;
+    width: auto;
+    height: 21em;
+    display: flex;
+    flex-direction: column;
+    position:static;  
+    border-radius: 0.5em;
+    
+}
+.top{
+   
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-right: 0%;
+    width: 90%;
+    float:left;
+    display: flex;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+
+    
+}
+
+.top2{
+   
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-left: 2%;
+    width: 28%;
+    float:left;
+    display: flex;
+    height: 3em;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+    display: none;
+}
+
+.top3{
+    background:rgb(87, 87, 87); 
+    color: rgb(243, 243, 243);
+    padding:10px; 
+    margin: 0px 5%;
+    margin-left: 5%;
+    width: 90%;
+    float:left;
+    display: flex;
+    height: 3em;
+    height: 2.25em;
+    border-radius: 0.3em; 
+    position:relative;
+    font-size: 1.3em;
+    
+}
+.reset{
+   
+    background-image: url(restart.png);
+    background-color: rgb(87, 87, 87); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0px;
+    width: 2.5em;
+    height: 2.5em;
+    right: 1%;
+    top: 15%;
+    color: rgb(54, 42, 42);
+    position: absolute;
+    cursor: pointer;
+}
+
+.btn {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.2em;
+    color:rgb(12, 12, 12);
+}
+
+.btn-key{
+  
+    font-size: 0.9em;
+    margin-left: -1px;
+    margin-right: -1px;
+    height: 3.5em;
+    min-height: 1em;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    background-size: cover;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 3em;
+}
+
+.btn-spec{
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+    font-size: 1em;
+    margin-right: -1px;
+    height: 3em;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    margin-bottom: 0.2em;
+    background-size: cover;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    
+}
+.btn-head{
+    white-space: pre-wrap;
+    padding-top: 0.7em;
+    padding-bottom: 1.9em;
+    height: 1.4em;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    background-size: cover;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    font-size: 1.2em;
+    margin-bottom: 0.05em;
+}
+
+.material-symbols-outlined{
+    
+    font-size: 2.2em;
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    pointer-events: none;
+    color: rgb(48, 48, 48);
+    
+}
+.img-res {
+    
+    width: 100%;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    
+}
+.taxBox{
+    background-color: rgb(53, 53, 53);
+    color: rgb(243, 243, 243);
+    
+    width: 100%;
+    vertical-align: middle;
+    font-size: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+.scrollbox {
+
+    overflow: auto;
+    
+}
+
+.scrollbox-inner{
+
+    color: black;
+}
+
+.Refs{
+    margin-left: 5%;
+    margin-right: 5%;
+    color:rgb(12, 12, 12);
+}
+.line-1{
+    height: 1px;
+  background: black;
+  margin-bottom: 1em;
+}
+
+.Minor-title{
+    margin-bottom: 0.2em;
+}
+.Text{
+
+    margin: 1em;
+    
+}
+.Container{
+
+    max-width: 1200px;
+
+}
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+
+    display: inline-block;
+}
+
+.nav a{
+
+    padding: 1em;
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+}
+
+
+
+
+.Footer{
+    
+    margin-top: 2em;
+    text-align: right;
+    padding-Top: 30px;
+    background-color: rgb(237, 237, 237);
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-top: 0px solid black;
+   
+}
+
+@media only screen and (min-width: 650px){
+    
+    ::-webkit-scrollbar{
+        width:  10px;
+       
+    }
+    .Title{
+        background-color: rgb(57, 57, 57);
+         color: white;
+         padding-bottom: 1px;
+         padding-Top: 0.5px;
+         margin: 0;
+         text-align: center;
+         font-size: 1.2em;
+         font-weight: normal;
+     
+    }
+    .obj1{
+   
+        display:block;
+    }
+    .obj2{
+    
+        display:none;
+    }
+    
+    
+    .btn-key{
+
+        width: 49.67%;
+       
+    }
+   
+
+    .img-res {
+    
+        width: 49.5%;
+        
+        
+    }
+
+    .leftbar {
+
+        height: 40em;
+        margin: 0px 5%;
+        margin-bottom: 1em;
+        
+    
+    }
+    .sidebar {
+        
+        height: 30em;
+        margin: 0px 5%;
+        
+    
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .Title{
+        background-color: rgb(57, 57, 57);
+         color: white;
+         padding-bottom: 0.1px;
+         padding-Top: 0.5px;
+         margin: 0;
+         text-align: center;
+         font-size: 1.3em;
+         font-weight: normal;
+     
+    }
+    
+    .top{
+   
+        background:rgb(87, 87, 87); 
+        color: rgb(243, 243, 243);
+        padding:10px; 
+        margin: 0px 5%;
+        margin-right: 0%;
+        width: 60%;
+        float:left;
+        display: flex;
+        height: 2.25em;
+        border-radius: 0.3em; 
+        position:relative;
+        font-size: 1.3em;
+    
+        
+    }
+    
+    .top2{
+       
+        background:rgb(87, 87, 87); 
+        color: rgb(243, 243, 243);
+        padding:10px; 
+        margin: 0px 5%;
+        margin-left: 2%;
+        width: 28%;
+        float:left;
+        display: flex;
+        height: 3em;
+        height: 2.25em;
+        border-radius: 0.3em; 
+        position:relative;
+        font-size: 1.3em;
+    }
+
+    .top3{
+       display: none;
+        
+    }
+    .leftbar {
+
+        height: 52em;
+        margin: 0px 5%;
+        margin-right: 2%;
+        margin-bottom: 1em;
+        width: 60%;
+        
+    
+    }
+    .sidebar {
+        
+        height: 52em;
+        margin: 0px 5%;
+
+    }
+}
+
+
+

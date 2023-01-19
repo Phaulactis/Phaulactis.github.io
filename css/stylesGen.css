@@ -1,0 +1,114 @@
+
+
+
+
+.contente{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: -10px;
+}
+.portrait{
+    display: table-cell;
+    width: 35%;
+   
+    height: 100%;
+    margin-left: 5%;
+    border-radius: 0.25em;
+    margin-top: 1em;
+    
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    
+   
+}
+
+.desc{
+    overflow: hidden;
+    overflow-y:auto;
+    flex-direction: column;
+    display: table-cell;
+    margin-top: 1em;
+    margin-left:1%;
+    margin-right:5%;
+    background-color: rgb(230, 230, 230);
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 0.25em;
+    border-width: 0px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    height:fit-content;
+    aspect-ratio : 1 / 0.6488;
+    
+    
+}
+
+.KeyCharacters{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    position: relative;
+    
+}
+
+.KeyContainer{
+    margin-top: 1.5em;
+    background-color: rgb(230, 230, 230);
+    padding: 1em;
+    padding-top: 0.1em;
+    border-radius: 0.25em;
+    border-width: 0px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+
+    
+}
+
+
+.Character{
+    
+    border-radius: 0.25em;
+    border-width: 0px;
+    padding-top: 0.5em;
+    border-style:solid;
+    border-color: rgb(0, 160, 135);
+    width: 100%;
+   
+    text-align: left;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    
+}
+#keyLink{
+   position: absolute;
+   right: 2.5em;
+   top:2em
+}
+
+.SubCharactera{
+    
+    border-width: 1px;
+    padding: 0.5em;
+    border-style:solid;
+    border-color: rgb(25, 88, 78);
+    background-color: rgb(0, 150, 125);
+    color: rgb(255, 255, 255);
+    
+    
+}
+.SubCharacterb{
+    
+    border-width: 1px;
+    padding: 0.5em;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    background-color: rgb(243, 243, 243);
+    
+    
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }

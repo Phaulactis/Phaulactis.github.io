@@ -17,12 +17,13 @@ const speciesNameOrg = ["Homolobus infumator","Homolobus annulicornis", "Homolob
 var speciesName = []
 var steps = [0,0,0,0,0,0,0];
 const questions = ["m1", "m2", "m3", "m4", "m5", "m6", "m7"]
-const green = "rgb(112, 192, 87)";
+const green = "rgb(0, 160, 135)";
 
 
 
 window.onload= function(){
 	
+	console.log("e2");
 	species = speciesOrg;
 	speciesName = speciesNameOrg;
 	questions.forEach(element => {
@@ -56,6 +57,15 @@ function Open(thing){
 	}
 
 }
+
+function Species(id){
+
+	var file = document.getElementById(id).innerHTML;
+	file = file.replace(" ", "_");
+	file = "html/" + file + ".html";
+	window.location.href = file;
+}
+
 
 function Step(value, index, id) {
 	
