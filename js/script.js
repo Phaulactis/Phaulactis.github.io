@@ -64,7 +64,8 @@ function Species(id){
 	var file = document.getElementById(id).innerHTML;
 	file = file.replace(" ", "_");
 	file = "/html/" + file + ".html";
-	window.location.href = file;
+	//window.location.href = file;
+	Window.open(file);
 }
 
 
