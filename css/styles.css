@@ -301,16 +301,23 @@ html, body{
     padding-left: 1em;
     padding-right: 3em;
 }
-
+#specCont{
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 0.7em;
+   
+}
 .btn-spec{
-    padding-top: 0.2em;
-    padding-bottom: 0.4em;
+    margin-top: -0.7em;
+    
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 1em;
-    margin-right: -1px;
-    height: 3em;
     background-color: rgb(243, 243, 243);
     width: 100%;
-    margin-bottom: 0.2em;
     background-size: cover;
     border-width: 1px;
     border-style:solid;
@@ -330,6 +337,10 @@ html, body{
     border-color: rgb(61, 61, 61);
     font-size: 1.2em;
     margin-bottom: 0.05em;
+}
+#btnCont{
+    margin-top: 1em;
+    margin-bottom: -0.3em;
 }
 .btn-green1{
     border-radius: 6px;
@@ -354,15 +365,16 @@ html, body{
     margin-left: 0.7em;
     margin-top: 1em;
     margin-bottom: -0.7em;
-    
-    min-width: 1px;
+
     padding: 0.2em;
     min-width: 5em;
     padding-left: 1em;
     padding-right: 1em;
+
     border-width: 1px;
     border-style:solid;
     border-color: rgb(61, 61, 61);
+    background-color: rgb(243, 243, 243);
 }
 .btn-green2{
     border-radius: 6px;
@@ -382,7 +394,7 @@ html, body{
 
 }
 .btn-white2{
-    
+   
     border-radius: 6px;
     margin-left: 5%;
     margin-bottom: -0.7em;
@@ -395,6 +407,8 @@ html, body{
     border-width: 1px;
     border-style:solid;
     border-color: rgb(61, 61, 61);
+    background-color: rgb(243, 243, 243);
+   
 }
 
 .material-symbols-outlined{
@@ -594,6 +608,14 @@ html, body{
             
     
     }
+    #specCont{
+        height: 29em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 0.7em;
+       
+    }
     #MenuIcon{
   
        
@@ -670,6 +692,14 @@ html, body{
         height: 56em;
         margin: 0px 5%;
 
+    }
+    #specCont{
+        height: 55em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 0.7em;
+       
     }
     #MenuIcon{
   

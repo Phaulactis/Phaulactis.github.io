@@ -12,8 +12,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <meta name = "description" content="Key to Homolobus of Sweden"> 
        
-        <link rel="stylesheet" href="css/styles.css"/>
-        <link rel="stylesheet" href="css/stylesGen.css"/>
+        
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <link rel="stylesheet" href="/css/stylesGen.css"/>
     </head>
     <body> 
         <div id= "MenuIcon" ><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="currentColor"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></div>
@@ -38,9 +39,12 @@
      <header class="Title">
        <h2>Key to swedish species of Homolobus</h2>
      </header>
-     <button class="btn btn-white2" onclick="Link('/html/homolobus.html')">Information</button>
-            <button class="btn btn-white1" onclick="Link('/html/homolobusG.html')">Gallery</button>
-            <button class="btn btn-green2" onclick="Link('/index.html')">Key</button>
+        <div id = "btnCont">
+            <a href ='/html/homolobus.html' style="color:#0c0c0c" class="btn btn-white2">Information</a>
+            <a href ='/html/homolobusG.html' style="color:#0c0c0c" class="btn btn-white1">Gallery<a>
+            <a href ='/index.html' style="color:#f3f3f3" class="btn btn-green2" >Key</a>
+        </div>
+            
         <div class="Main">
             
             <div class="top"> <div>Descriptors</div> <button class="reset" onclick="Reset()"></button>
@@ -230,12 +234,15 @@
             <nav class="sidebar">
                 <div class="scrollbox">
                     <div class="scrollbox-inner">
-                        <button class = "btn btn-spec" onclick="Species('0e')" id = 0e type ="button">Homolobus infumator</button><br>
-                        <button class = "btn btn-spec" onclick="Species('1e')" id = 1e  type ="button">Homolobus annulicornis</button><br>
-                        <button class = "btn btn-spec" onclick="Species('2e')" id = 2e type ="button">Homolobus discolor</button><br>
-                        <button class = "btn btn-spec" onclick="Species('3e')" id = 3e type ="button">Homolobus bohemani</button><br>
-                        <button class = "btn btn-spec" onclick="Species('4e')" id = 4e type ="button">Homolobus flagitator</button><br>
-                        <button class = "btn btn-spec" onclick="Species('5e')" id = 5e type ="button">Homolobus truncator</button><br>
+                        <div id="specCont">
+                            <a class = "btn btn-spec" href="/html/Homolobus_infumator.html" style="color:#0c0c0c" id = 0e type ="button">Homolobus infumator</a><br>
+                            <a class = "btn btn-spec" href="/html/Homolobus_annulicornis.html" style="color:#0c0c0c" id = 1e  type ="button">Homolobus annulicornis</a><br>
+                            <a class = "btn btn-spec" href="/html/Homolobus_discolor.html" style="color:#0c0c0c" id = 2e type ="button">Homolobus discolor</a><br>
+                            <a class = "btn btn-spec" href="/html/Homolobus_bohemani.html" style="color:#0c0c0c" id = 3e type ="button">Homolobus bohemani</a><br>
+                            <a class = "btn btn-spec" href="/html/homolobus_flagitator.html" style="color:#0c0c0c" id = 4e type ="button">Homolobus flagitator</a><br>
+                            <a class = "btn btn-spec" href="/html/homolobus_truncator.html" style="color:#0c0c0c" id = 5e type ="button">Homolobus truncator</a><br>
+                        </div>
+                       
                        
                     </div>
                 </div>
@@ -254,6 +261,6 @@
             </div>   
             <div class ="taxBox"><a class="taxa" href="Brachonidae">Hymenoptera </a><a class="taxa" href="Braconidae">Braconidae </a><a class="taxa" href="Homolobinae">Homolobinae  </a></div>   
     </body>
-    <script src="js/script.js"></script>
-    <script src="js/basics.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/basics.js"></script>
 </html>

@@ -64,7 +64,7 @@ function Species(id){
 	var file = document.getElementById(id).innerHTML;
 	file = file.replace(" ", "_");
 	file = "/html/" + file + ".html";
-	window.location.href = file;
+	//window.location.href = file;
 	window.open(file);
 }
 
@@ -130,6 +130,12 @@ function Step(value, index, id) {
 				
 				document.getElementById(i+ "e").hidden = false;
 				document.getElementById(i + "e").innerHTML = speciesName[i];
+				var file = speciesName[i];
+				file = file.replace(" ", "_");
+				file = "/html/" + file + ".html";
+				
+				 // @ts-ignore   
+				document.getElementById(i + "e").href = file;
 			}
 			else{
 				document.getElementById(i + "e").hidden = true;
