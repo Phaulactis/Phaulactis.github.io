@@ -35,6 +35,7 @@
     padding-top: 0em;
     border-radius: 0.25em;
     height:30em;
+    min-width: 53%;
    
     
 }
@@ -85,9 +86,7 @@
     border-style:solid;
     border-color: rgb(0, 160, 135);
     width: 100%;
-   
     text-align: left;
-    
     border-collapse: collapse;
     display: block;
   
@@ -127,6 +126,7 @@
 }
 
 .Gal{
+
    background-color:  rgb(230, 230, 230);
    width: 90%;
    margin-left: 5%;
@@ -146,8 +146,10 @@
    flex-wrap: wrap;
    min-height: 20vh;
    color: rgb(61, 61, 61)
+
 }
 #Big{
+
     position: fixed;
     width: 100%;
     height: 100%;
@@ -305,7 +307,7 @@
         border-color: rgb(61, 61, 61);
         height:fit-content;
         aspect-ratio : 1 / 1.022;
-        
+        min-width: 44%;
         
     }
 
@@ -376,7 +378,7 @@
         border-width: 0px;
         border-style:solid;
         border-color: rgb(61, 61, 61);
-        
+        min-width: 54%;
         aspect-ratio : 1 / 0.6488;
        
   }

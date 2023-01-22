@@ -11,12 +11,12 @@ a{
     text-decoration: none;
 }
 a:link {
-    color: rgb(0, 150, 125);
+    color: rgb(0, 140, 115);
   }
   
   /* visited link */
   a:visited {
-    color: rgb(0, 150, 125);
+    color: rgb(0, 140, 115);
   }
   
   /* mouse over link */
@@ -38,18 +38,16 @@ html, body{
     
     width:  0px;
   
-   
-   
 }
 
 ::-webkit-scrollbar-thumb{
 
     background: rgb(190, 190, 190);
-   
     
 }
 
 #Menu{
+
     position: fixed;
     background-color: rgb(44, 44, 44);
     background: linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(44,44,44,1) 28%, rgba(54,54,54,1) 100%);
@@ -60,9 +58,10 @@ html, body{
     transition: width 0.2s ease;
     min-height: 38em;
     
-    
+       
 }
 #Overlay{
+
     width: 1000em;
     height: 100em;
     background-color: rgba(0, 0, 0, 0.267);
@@ -71,6 +70,7 @@ html, body{
     display: none;
 }
 .MenuItem{
+
     vertical-align: bottom;
     display: flex;
     z-index: 5;
@@ -81,28 +81,34 @@ html, body{
     white-space: nowrap
 }
 #Contact{
+
     position: absolute;
     bottom: 2em;
 }
 #Twitter{
+
     position: absolute;
     bottom:  1.5em;
     left: 3em;
     cursor: pointer;
 }
 #Youtube{
+
     position: absolute;
     bottom: 1.5em;
     left: 8em;
     cursor: pointer;
 }
 #Phaulactis{
+
     width: 13.5em;
     margin-top: 0.6em;
     margin-left: 0.7em;
     animation: rotation 50s infinite linear;
+
 }
 @keyframes rotation {
+
     from {
       transform: rotate(0deg);
     }
@@ -115,20 +121,22 @@ html, body{
     position: absolute;
     color: rgb(243, 243, 243);
     fill: rgb(243, 243, 243);
-    margin: 0.2em;
+    margin: 0.1%;
     z-index: 1;
     cursor: pointer;
-    
+  
+   
 }
 .Title{
-
+    padding-left: 2em;
+    padding-right: 2em;
     background: rgb(64,64,64);
     background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
     color: rgb(243, 243, 243);
     padding-bottom: 20px;
     padding-Top: 1px;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 2.5vw;
     font-weight: normal;
     height: 4.5em;
  
@@ -454,20 +462,16 @@ html, body{
     background: rgb(64,64,64);
     background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
     color: rgb(243, 243, 243);
-    
     width: 100%;
-    vertical-align: middle;
-    font-size: 0.9em;
     padding-top: 1em;
     padding-bottom: 1.5em;
     margin-top: 1.5em;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    
     position: absolute;
-    bottom: 0em;
     flex-wrap: wrap;
-    gap: 1em;
+    bottom: 0em;
    
     
 }
