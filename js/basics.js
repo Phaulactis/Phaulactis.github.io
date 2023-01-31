@@ -8,7 +8,19 @@ const youtube = document.getElementById('Youtube')
 
 let menuOpen = false
 
-
+const searchble = [
+  "/html/Braconidae.html",
+  "/html/Homolobus.html",
+  "/html/HomolobusKey.html",
+  "/html/Homolobus_annulicornis.html",
+  "/html/Homolobus_bohemani.html",
+  "/html/Homolobus_discolor.html",
+  "/html/Homolobus_flagitator.html",
+  "/html/Homolobus_infumator.html",
+  "/html/Homolobus_truncator.html",
+  "/html/Homolobinae.html"
+  
+]
 
 
 
@@ -44,10 +56,35 @@ function openMenu() {
 
   youtube.addEventListener('click', function () {
     open("https://www.youtube.com/channel/UCd9giNbLc9gOKn0Zv5hwYmg");
-   
+    
   })
 
   function Link(a){
 
     window.location.href = a;
   }
+
+  function Search(search){
+    let results = ["e"]
+    searchble.forEach(element => {
+      fetch(element)
+      .then(response => response.text())
+      .then(html => {
+          let parser = new DOMParser();
+          let doc = parser.parseFromString(html, "text/html");
+          let title = doc.getElementsByTagName("title")[0].textContent;
+          if (title.toLocaleLowerCase().includes(search)) {
+
+            results.push(element)
+          }
+        })
+       .catch(function() {
+          console.log("error");
+        });
+      
+    });
+    console.log(results)
+    return(results)
+    
+    }
+   

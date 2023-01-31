@@ -24,8 +24,31 @@ a:link {
     color: hotpink;
   }
 
+#mainBack {
+    position:relative; 
+    display: fixed; 
+    margin: 0px; 
+    margin-top: -0.9em; 
+    width: 100%;  
+    min-height: 100ch; 
+    height: 100vh;
+     text-align: center; 
+    
+    background-size: cover; 
+    background-image:url('/img/Dusona falcator.png'); 
+    background-position-x:  40%;
+    
+    
+}
+#sercCont{
+    top: 60vh; width: 70%; height: 2em; position: fixed; left: 15%;
+}
 
-
+#searchRes{
+    max-height: 34vh;
+    background-color: rgba(243, 243, 243, 0.692);
+    margin-bottom: 20em
+ }
 html, body{
     background-color: rgb(207, 207, 207);
     margin: 0;
@@ -45,7 +68,45 @@ html, body{
     background: rgb(190, 190, 190);
     
 }
+.searhRes{
+   margin-top: -1.2em;
+   
+   padding:10px 10px;
+ 
+}
+.searhRes:hover{
+   
+    background-color: rgba(34, 34, 34, 0.089);
+    color:rgb(243, 243, 243);
+   
+ }
+ .searhReM{
+    margin-top: -1.2em;
+   
+    padding: 10px 10px;
+    background-color: rgb(0, 150, 125);
+    color:rgb(243, 243, 243);
+   
+ }
 
+ .sercLink{
+    padding-right: 1000em;
+    white-space: nowrap;
+    padding-top: 0.7em;
+    padding-bottom:  0.7em;
+    
+ }
+ input[type=text] {
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 4px;
+  }
+  input[type=text]:focus {
+  
+   outline-color: rgb(44, 44, 44);
+   outline-width: 2px;
+   outline-style: solid;
+   background-color: rgb(0, 150, 125);
+  }
 #Menu{
 
     position: fixed;
@@ -57,7 +118,8 @@ html, body{
     overflow: hidden;
     transition: width 0.2s ease;
     min-height: 38em;
-    
+    background: rgb(64,64,64);
+    background: linear-gradient(0deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 40%, rgba(44,44,44,1) 80%, rgba(44,44,44,1) 100%);
        
 }
 #Overlay{
@@ -118,14 +180,16 @@ html, body{
 }
 #MenuIcon{
   
-    position: absolute;
+   
     color: rgb(243, 243, 243);
-    fill: rgb(243, 243, 243);
-    margin: 0.1%;
+    fill: rgb(255, 0, 0);
+    margin-top: 0.6em;
+    margin-left: -1.5em;
     z-index: 1;
     cursor: pointer;
-  
-   
+    transform: scale(0.75);
+    height: 0em;
+    font-size: 1em; 
 }
 .Title{
     padding-left: 2em;
@@ -133,12 +197,15 @@ html, body{
     background: rgb(64,64,64);
     background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
     color: rgb(243, 243, 243);
-    padding-bottom: 20px;
-    padding-Top: 1px;
+    padding-bottom: 5px;
+    
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 0.7em;
     font-weight: normal;
-    height: 4.5em;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    vertical-align: middle;
  
 }
 
@@ -186,15 +253,16 @@ html, body{
     margin-bottom: 1em;
     width: auto;
     height: 40em;
-    
     flex-direction: column;
     float:left;
     border-radius: 0.5em;
     overflow: hidden;
     overflow-y:auto;
+   
 }
 
 .sidebar {
+    
     background:rgb(230, 230, 230);
     padding: 0.5em;
     margin: 0px 5%;
@@ -205,9 +273,7 @@ html, body{
     border-radius: 0.5em;
     overflow: hidden;
     overflow-y:auto;
-   
-   
-    
+
 }
 .top{
    
@@ -508,6 +574,7 @@ html, body{
 
 .Minor-title{
     margin-bottom: 0.2em;
+    font-size: 1.2em;
 }
 .Text{
 
@@ -551,7 +618,32 @@ html, body{
 }
 
 @media only screen and (min-width: 650px){
-    
+    #mainBack {
+        position:relative; 
+        display: fixed; 
+        margin: 0px; 
+        margin-top: -0.5em; 
+        width: 100%;  
+        margin-top: -0.9em; 
+        height: 100vh;
+        background-position-x:  40%;
+    }
+    #searchRes{
+        max-height: 36vh;
+        background-color: rgba(243, 243, 243, 0.692);
+     }
+    #sercCont{
+        top: 60vh; width: 40%; position: fixed; left: 30%;
+    }
+    #mainBack ::-webkit-scrollbar{
+
+        width: 0px;
+     }
+    #mainBack ::-webkit-scrollbar-thumb{
+         
+       background-color: rgba(0, 0, 0, 0);
+       
+    }
     ::-webkit-scrollbar{
         width:  10px;
        
@@ -565,13 +657,23 @@ html, body{
     .Title{
         background-color: rgb(57, 57, 57);
          color: rgb(241, 241, 241);
-         padding-bottom: 1px;
-         padding-Top: 0.5px;
+         padding-bottom: 5px;
+         
          margin: 0;
          text-align: center;
          font-size: 1em;
          font-weight: normal;
      
+    }
+    #MenuIcon{
+        margin-top: 0.71em;
+        margin-left: -1em;
+        transform: scale(1);
+        font-size: 1em; 
+    }
+    .Minor-title{
+        margin-bottom: 0.2em;
+        font-size: 1.5em;
     }
     .obj1{
    
@@ -620,27 +722,56 @@ html, body{
         padding-top: 0.7em;
        
     }
-    #MenuIcon{
   
-       
-        margin: 0.7em;
-       
-    }
 }
 
-@media only screen and (min-width: 1000px){
+
+
+@media only screen and (min-width: 1281px){
+    #mainBack{
+         
+        margin-top: -0.9em; 
+        width: 100%;  
+        margin-bottom: -10em;
+        min-height: 100ch; 
+         text-align: center; 
+        height: auto;
+        background-size:cover; 
+        
+        background-image:url('/img/Dusona falcator.png'); 
+        background-position: center;
+        
+    }
+    #mainBack ::-webkit-scrollbar{
+       
+        
+        width: 0px;
+     }
+    #mainBack ::-webkit-scrollbar-thumb{
+         
+       background-color: rgba(0, 0, 0, 0);
+       
+    }
+    #sercCont{
+        top: 65vh;  width: 40%; height: 2em; position: fixed; left: 30%;
+    }
     .Title{
         background-color: rgb(57, 57, 57);
          color: rgb(243, 243, 243);
-         padding-bottom: 0.1px;
-         padding-Top: 0.5px;
+         padding-bottom: 5px;
+         padding-Top: 0;
          margin: 0;
          text-align: center;
          font-size: 1.3em;
          font-weight: normal;
      
     }
-    
+    #MenuIcon{
+        margin-top: 1.1em;
+        margin-left: -1em;
+        transform: scale(1);
+        font-size: 1em; 
+    }
     .top{
    
         background:rgb(87, 87, 87); 
@@ -705,12 +836,7 @@ html, body{
         padding-top: 0.7em;
        
     }
-    #MenuIcon{
-  
-       
-        margin: 1.3em;
-       
-    }
+   
 }
 
 
