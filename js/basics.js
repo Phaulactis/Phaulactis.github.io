@@ -8,19 +8,7 @@ const youtube = document.getElementById('Youtube')
 
 let menuOpen = false
 
-const searchble = [
-  "/html/Braconidae.html",
-  "/html/Homolobus.html",
-  "/html/HomolobusKey.html",
-  "/html/Homolobus_annulicornis.html",
-  "/html/Homolobus_bohemani.html",
-  "/html/Homolobus_discolor.html",
-  "/html/Homolobus_flagitator.html",
-  "/html/Homolobus_infumator.html",
-  "/html/Homolobus_truncator.html",
-  "/html/Homolobinae.html"
-  
-]
+
 
 
 
