@@ -17,7 +17,7 @@ function img_find() {
     imgs = document.getElementsByTagName("img");
     
     imgSrcs = [];
-
+    
 
     for (var i = 0; i < imgs.length; i++) {
         if(imgs[i].src.lastIndexOf("PhaulactisBig.png") < 0 && imgs[i].id != "BigImg" && imgs[i].src.lastIndexOf("Chev") < 0){

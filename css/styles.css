@@ -268,7 +268,7 @@ html, body{
     margin: 0px 5%;
     width: auto;
     height: 21em;
-    flex-direction: column;
+   
     position:static;  
     border-radius: 0.5em;
     overflow: hidden;
@@ -379,8 +379,7 @@ html, body{
     height: 20em;
     display: flex;
     flex-direction: column;
-    
-    padding-top: 0.7em;
+   
    
 }
 .btn-spec{
@@ -716,9 +715,8 @@ html, body{
     }
     #specCont{
         height: 29em;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        
+        
         padding-top: 0.7em;
        
     }
@@ -832,7 +830,7 @@ html, body{
         height: 55em;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+   
         padding-top: 0.7em;
        
     }

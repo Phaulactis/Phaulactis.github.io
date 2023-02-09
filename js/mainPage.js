@@ -7,24 +7,9 @@ let ind = 0
 let leng = 0
 let selecting = false
 let link = ""
-
-const searchble = [
-  "/html/Braconidae.html",
-  "/html/Homolobus.html",
-  "/html/HomolobusKey.html",
-  "/html/Homolobus_annulicornis.html",
-  "/html/Homolobus_bohemani.html",
-  "/html/Homolobus_discolor.html",
-  "/html/Homolobus_flagitator.html",
-  "/html/Homolobus_infumator.html",
-  "/html/Homolobus_truncator.html",
-  "/html/Homolobinae.html"
-  
-]
-
 searc.addEventListener('keyup', e=> {
   
-  
+    console.log(Dusona_bicoloripes)
     k = e.key
    
     if(k !== "ArrowUp" && k !== "ArrowDown"){
