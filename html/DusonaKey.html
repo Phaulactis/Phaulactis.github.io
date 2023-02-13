@@ -18,822 +18,861 @@
         <link rel="stylesheet" href="/css/stylesGen.css"/>
     </head>
     <body> 
-        
-        <div id = "Overlay"></div>
-        <div id="Menu">
-            <img id= "Phaulactis" src="/img/PhaulactisBig.png">
-            <a href="/index.html" class="MenuItem">
-                <div>Start</div>
-            </a>
-            <a href="/html/Keys.html" class="MenuItem">
-                <div>Keys</div>
-            </a>
-            <a href="/html/About.html" class="MenuItem">
-                <div>About</div>
-            </a>
-            <a href="/html/Contact_me.html" id="Contact" class="MenuItem">
-                <div>Contact me</div>
-            </a> 
-            <svg id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px" fill-rule="nonzero"><g fill="#02ad94" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z"></path></g></g></svg>
-            <svg id="Youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px" fill-rule="nonzero"><g fill="#02ad94" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g></svg>
-        </div>
-     <header class="Title">
-        <div id= "MenuIcon" ><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="currentColor"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></div>
-       <h2>Key to swedish species of Dusona</h2>
-       <div style="visibility: hidden;" id= "MenuIcon" ><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="currentColor"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></div>
-     </header>
-        <div id = "btnCont">
-            <a href ='/html/Homolobus.html' style="color:#0c0c0c" class="btn btn-white2">Information</a>
-            <a href ='/html/HomolobusG.html' style="color:#0c0c0c" class="btn btn-white1">Gallery<a>
-            <a href ='/html/HomolobusKey.html' style="color:#f3f3f3" class="btn btn-green2" >Key</a>
-        </div>
-            
-        <div class="Main">
-            
-            <div class="top"> <div>Descriptors</div> <button class="reset" onclick="Reset()"></button>
-            </div>
-            <div class="top2" id="top2">
-                Remaining taxa
+        <div style=" margin-right:calc(-1 * (100vw - 100%)); overflow: visible; ">
+            <div id = "Overlay"></div>
+            <div id="Menu">
+                <img id= "Phaulactis" src="/img/PhaulactisBig.png">
+                <a href="/index.html" class="MenuItem">
+                    <div>Start</div>
+                </a>
+                <a href="/html/Keys.html" class="MenuItem">
+                    <div>Keys</div>
+                </a>
+                <a href="/html/About.html" class="MenuItem">
+                    <div>About</div>
+                </a>
+                <a href="/html/Contact_me.html" id="Contact" class="MenuItem">
+                    <div>Contact me</div>
+                </a> 
+                <svg id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px" fill-rule="nonzero"><g fill="#02ad94" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z"></path></g></g></svg>
+                <svg id="Youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px" fill-rule="nonzero"><g fill="#02ad94" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g></svg>
             </div>
             
-            <nav class="leftbar">
-              <div class="scrollbox">
-                    <div class="scrollbox-inner">
-                        <div class="mainbar" id = "m1"> 
-                          
-                            <button class = "btn btn-head" id="b0" onclick="Open('m1')" type ="button" >      0Epipleural fold</button><br>
-                            <span class="material-symbols-outlined" id = "am1">chevron_right</span>
-
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "1101"data-value="1" data-index="0" type ="button">Folded</button> 
-                                <button class = "btn btn-key" id = "2101" data-value="2" data-index="0" type ="button">NotFoled</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "1102"data-value="1" data-index="0"type ="button">Folded</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "2102" data-value="2" data-index="0" type ="button">NotFoled</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                        </div>
-
-                        <div class="mainbar" id = "m2">   
-                            <button class = "btn btn-head" id="b1" onclick="Open('m2')" type ="button">      1size</button><br>
-                            <span class="material-symbols-outlined" id = "am2">chevron_right</span>
-                            <input type="number" class ="inp" data-index="1" id="size" min="1" max="25">
-                        </div>
-
-                        <div class="mainbar" id = "m3">   
-                            <button class = "btn btn-head" id="b2" onclick="Open('m3')" type ="button">      2Temple constriction</button><br>
-                            <span class="material-symbols-outlined" id = "am3">chevron_right</span>
-
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "1211" data-value="1" data-index="2" type ="button">1Temples not strongly constricted behind the eyes, tangential lines on eyes and temples intersect on the gaster</button> 
-                                <button class = "btn btn-key" id = "2211" data-value="2" data-index="2" type ="button">2Temples strongly constricted behind the eyes, tangential lines on eyes and temples intersect on the mesoscutum</button>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "4211" data-value="4" data-index="2" type ="button">4tangential lines on eyes and temples intersect on the propodeum</button>
-                                <button class = "btn btn-key" id = "5211" data-value="5" data-index="2" type ="button">5tangential lines on eyes and temples intersect on the scutelum</button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "1212" data-value="1" data-index="2">1Temples not strongly constricted behind theeyes, tangential lines on eyes and temples intersect on the gaster</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "2212" data-value="2" data-index="2">2Temples strongly constricted behind the eyes, tangential lines on eyes and temples intersect on the mesoscutum</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "4212" data-value="4" data-index="2">4tangential lines on eyes and temples intersect on the propodeum</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "5212" data-value="5" data-index="2">5tangential lines on eyes and temples intersect on the scutelum</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div> 
-   
-                        </div>
-                        <div class="mainbar" id = "m4">   
-                            <button class = "btn btn-head" id="b3" onclick="Open('m4')" type ="button">      3Ocellar index</button><br>
-                            <span class="material-symbols-outlined" id = "am4">chevron_right</span>
-                           <input type="number" class ="inp" step="0.1" data-index="3" id="ocellar" min="0.1" max="2">
-                           
-                        </div>
-
-                            
-                       
-                        <div class="mainbar" id = "m5">   
-                            <button class = "btn btn-head" id="b4" onclick="Open('m5')" type ="button">      4Antennal carina</button><br>
-                            <span class="material-symbols-outlined" id = "am5">chevron_right</span>
-
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee1" data-value="1" data-index="4">1 Low </button> 
-                                <button class = "btn btn-key" id = "aaae1" data-value="3" data-index="4">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "wwww1"data-value="4" data-index="4">4</button> 
-                                <button class = "btn btn-key" id = "eeee1" data-value="5" data-index="4">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "rrrr1"data-value="6" data-index="4">6</button> <br>
-                            
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee2" data-value="1" data-index="4">1 Low </button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae2" data-value="3" data-index="4">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "wwww2"data-value="4" data-index="4">4</button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeee2" data-value="5" data-index="4">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "rrrr2"data-value="6" data-index="4">6</button>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div> 
-                            
-                        </div>
-                        <div class="mainbar" id = "m6">   
-                           
-
-                            <button class = "btn btn-head" id="b5" onclick="Open('m6')" type ="button">      5malar index</button><br>
-                            <span class="material-symbols-outlined" id = "am6">chevron_right</span>
-                           <input type="number" class ="inp" step="0.1" data-index="5" id="ocellar" min="0.1" max="2">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m7">   
-                            <button class = "btn btn-head" id="b6" onclick="Open('m7')" type ="button">      6Genal Carina</button><br>
-                            <span class="material-symbols-outlined" id = "am7">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee31" data-value="1" data-index="6">1</button> 
-                                <button class = "btn btn-key" id = "aaae31" data-value="2" data-index="6">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "wwww31"data-value="3" data-index="6">3</button><br> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                            
-                                
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee32" data-value="1" data-index="6">1</button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae32" data-value="2" data-index="6">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "wwww32"data-value="3" data-index="6">3</button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div> 
-                            
-                        </div>
-                        <div class="mainbar" id = "m8">   
-                            <button class = "btn btn-head" id="b7" onclick="Open('m8')" type ="button">      7pyramid</button><br>
-                            <span class="material-symbols-outlined" id = "am8">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee321" data-value="1" data-index="7">1yes</button> 
-                                <button class = "btn btn-key" id = "aaae321" data-value="2" data-index="7">2no</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                               
-                            
-                                
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee322" data-value="1" data-index="7">1yes</button> 
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae322" data-value="2" data-index="7">2no</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m9">   
-                            <button class = "btn btn-head" id="b8" onclick="Open('m9')" type ="button">      8genalIndex</button><br>
-                            <span class="material-symbols-outlined" id = "am9">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="8" id="genalInd" min="0" max="2">
-
-                            
-                        </div>
-
-                        <div class="mainbar" id = "m10">   
-                            <button class = "btn btn-head" id="b9" onclick="Open('m10')" type ="button">      9Flagelomeres</button><br>
-                            <span class="material-symbols-outlined" id = "am10">chevron_right</span>
-                            <input type="number" class ="inp" data-index="9" id="flagelomeres" min="0" max="100">
-                        </div>
-
-                        <div class="mainbar" id = "m11">   
-                            <button class = "btn btn-head" id="b10" onclick="Open('m11')" type ="button">      10Pleural part</button><br>
-                            <span class="material-symbols-outlined" id = "am11">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee3231" data-value="1" data-index="10">1normal</button> 
-                                <button class = "btn btn-key" id = "aaae3231" data-value="2" data-index="10">2obliterated</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee3232" data-value="1" data-index="10">1normal</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232" data-value="2" data-index="10">2obliterated</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m12">   
-                            <button class = "btn btn-head" id="b11" onclick="Open('m12')" type ="button">      11Pleural merging</button><br>
-                            <span class="material-symbols-outlined" id = "am12">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee32311" data-value="1" data-index="11">1</button> 
-                                <button class = "btn btn-key" id = "aaae32311" data-value="2" data-index="11">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee32312" data-value="1" data-index="11">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae32312" data-value="2" data-index="11">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m13">   
-                            <button class = "btn btn-head" id="b12" onclick="Open('m13')" type ="button">      12pleural junction</button><br>
-                            <span class="material-symbols-outlined" id = "am13">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee32321" data-value="1" data-index="12">1</button> 
-                                <button class = "btn btn-key" id = "aaae32321" data-value="2" data-index="12">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee32322" data-value="1" data-index="12">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae32322" data-value="2" data-index="12">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m14">   
-                            <button class = "btn btn-head" id="b13" onclick="Open('m14')" type ="button">      13ventral</button><br>
-                            <span class="material-symbols-outlined" id = "am14">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee3232a1" data-value="1" data-index="13">1</button> 
-                                <button class = "btn btn-key" id = "aaae3232a1" data-value="2" data-index="13">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee3232a2" data-value="1" data-index="13">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232a2" data-value="2" data-index="13">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m15">   
-                            <button class = "btn btn-head" id="b14" onclick="Open('m15')" type ="button">      14Mesopleuron</button><br>
-                            <span class="material-symbols-outlined" id = "am15">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee3232ab1" data-value="1" data-index="14">1</button> 
-                                <button class = "btn btn-key" id = "aaae3232ab1" data-value="2" data-index="14">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232ac1" data-value="6" data-index="14">6</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee3232ab2" data-value="1" data-index="14">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232ab2" data-value="2" data-index="14">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232ac2" data-value="6" data-index="14">6</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m16">   
-                            <button class = "btn btn-head" id="b15" onclick="Open('m16')" type ="button">      15Mesopleuron Texture</button><br>
-                            <span class="material-symbols-outlined" id = "am16">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee3232az1" data-value="1" data-index="15">smooth</button> 
-                                <button class = "btn btn-key" id = "aaae3232az1" data-value="2" data-index="15">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee3232az2" data-value="1" data-index="15">smooth</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232az2" data-value="2" data-index="15">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m17">   
-                            <button class = "btn btn-head" id="b16" onclick="Open('m17')" type ="button">      16Speculum</button><br>
-                            <span class="material-symbols-outlined" id = "am17">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "aaee3232abt1" data-value="1" data-index="16">1</button> 
-                                <button class = "btn btn-key" id = "aaae3232abt1" data-value="2" data-index="16">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232act1" data-value="3" data-index="16">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "aaee3232abt2" data-value="1" data-index="16">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232abt2" data-value="2" data-index="16">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "aaae3232act2" data-value="3" data-index="16">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m18">   
-                            <button class = "btn btn-head" id="b17" onclick="Open('m18')" type ="button">      17Infront of Speculum</button><br>
-                            <span class="material-symbols-outlined" id = "am18">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eq1" data-value="1" data-index="17">1</button> 
-                                <button class = "btn btn-key" id = "ee1" data-value="2" data-index="17">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "et1" data-value="3" data-index="17">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eq2" data-value="1" data-index="17">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ee2" data-value="2" data-index="17">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "et2" data-value="3" data-index="17">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m19">   
-                            <button class = "btn btn-head" id="b18" onclick="Open('m19')" type ="button">      18Nervelar Index</button><br>
-                            <span class="material-symbols-outlined" id = "am19">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="18" id="NervInd" min="0" max="2">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m20">   
-                            <button class = "btn btn-head" id="b19" onclick="Open('m20')" type ="button">      19Spur Index</button><br>
-                            <span class="material-symbols-outlined" id = "am20">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="19" id="tiblInd" min="0" max="2">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m21">   
-                            <button class = "btn btn-head" id="b20" onclick="Open('m21')" type ="button">      20Propodeum depression</button><br>
-                            <span class="material-symbols-outlined" id = "am21">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqe1" data-value="1" data-index="20">1</button> 
-                                <button class = "btn btn-key" id = "eee1" data-value="2" data-index="20">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ete1" data-value="3" data-index="20">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqe2" data-value="1" data-index="20">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eee2" data-value="2" data-index="20">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ete2" data-value="3" data-index="20">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m22">   
-                            <button class = "btn btn-head" id="b21" onclick="Open('m22')" type ="button">      21Glymma</button><br>
-                            <span class="material-symbols-outlined" id = "am22">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqee1" data-value="1" data-index="21">1</button> 
-                                <button class = "btn btn-key" id = "eeees1" data-value="2" data-index="21">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "etee1" data-value="3" data-index="21">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqee2" data-value="1" data-index="21">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeees2" data-value="2" data-index="21">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "etee2" data-value="3" data-index="21">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m23">   
-                            <button class = "btn btn-head" id="b22" onclick="Open('m23')" type ="button">      22Infront of Glymma</button><br>
-                            <span class="material-symbols-outlined" id = "am23">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeee1" data-value="1" data-index="22">1</button> 
-                                <button class = "btn btn-key" id = "eeeee1" data-value="2" data-index="22">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeee2" data-value="1" data-index="22">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeee2" data-value="2" data-index="22">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m24">   
-                            <button class = "btn btn-head" id="b23" onclick="Open('m24')" type ="button">      23Thyridal index</button><br>
-                            <span class="material-symbols-outlined" id = "am24">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="23" id="tiblInd" min="0" max="3">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m25">   
-                            <button class = "btn btn-head" id="b24" onclick="Open('m25')" type ="button">      24Ovipositor index</button><br>
-                            <span class="material-symbols-outlined" id = "am25">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="24" id="tiblInd" min="0" max="2">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m26">   
-                            <button class = "btn btn-head" id="b25" onclick="Open('m26')" type ="button">      25Maxillary palps</button><br>
-                            <span class="material-symbols-outlined" id = "am26">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeeel1" data-value="1" data-index="25">1yellowish</button> 
-                                <button class = "btn btn-key" id = "eeeeel1" data-value="2" data-index="25">2black</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeeel2" data-value="1" data-index="25">1yellowish</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeel2" data-value="2" data-index="25">2black</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m27">   
-                            <button class = "btn btn-head" id="b26" onclick="Open('m27')" type ="button">      26madible</button><br>
-                            <span class="material-symbols-outlined" id = "am27">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeeeh1" data-value="1" data-index="26">1yellowish</button> 
-                                <button class = "btn btn-key" id = "eeeeeh1" data-value="2" data-index="26">2black</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeeeh2" data-value="1" data-index="26">1yellowish</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeeh2" data-value="2" data-index="26">2black</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m28">   
-                            <button class = "btn btn-head" id="b27" onclick="Open('m28')" type ="button">      27Femur color</button><br>
-                            <span class="material-symbols-outlined" id = "am28">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeeehl1" data-value="1" data-index="27">1</button> 
-                                <button class = "btn btn-key" id = "eeeeehl1" data-value="2" data-index="27">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eqeeehs1" data-value="3" data-index="27">3</button> 
-                                <button class = "btn btn-key" id = "eeeeehj1" data-value="4" data-index="27">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeehm1" data-value="5" data-index="27">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeeehl2" data-value="1" data-index="27">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeehl2" data-value="2" data-index="27">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eqeeehs2" data-value="3" data-index="27">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eeeeehj2" data-value="4" data-index="27">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eeeeehm2" data-value="5" data-index="27">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m29">   
-                            <button class = "btn btn-head" id="b28" onclick="Open('m29')" type ="button">      28Hind tibia color</button><br>
-                            <span class="material-symbols-outlined" id = "am29">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeeehls1" data-value="1" data-index="28">1</button> 
-                                <button class = "btn btn-key" id = "eeeeehls1" data-value="2" data-index="28">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eqeeehss1" data-value="3" data-index="28">3</button> 
-                                <button class = "btn btn-key" id = "eeeeehjs1" data-value="4" data-index="28">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeehms1" data-value="6" data-index="28">6</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeeehls2" data-value="1" data-index="28">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeehls2" data-value="2" data-index="28">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eqeeehss2" data-value="3" data-index="28">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eeeeehjs2" data-value="4" data-index="28">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "eeeeehms2" data-value="6" data-index="28">6</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m30">   
-                            <button class = "btn btn-head" id="b29" onclick="Open('m30')" type ="button">      29Tibia ring</button><br>
-                            <span class="material-symbols-outlined" id = "am30">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="29" id="tibiaringlInd" min="0" max="1">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m31">   
-                            <button class = "btn btn-head" id="b30" onclick="Open('m31')" type ="button">      302nd tergit</button><br>
-                            <span class="material-symbols-outlined" id = "am31">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "eqeeehzz1" data-value="1" data-index="30">1</button> 
-                                <button class = "btn btn-key" id = "eeeeehzz1" data-value="2" data-index="30">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "eqeeehzz2" data-value="1" data-index="30">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "eeeeehzz2" data-value="2" data-index="30">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m32">   
-                            <button class = "btn btn-head" id="b31" onclick="Open('m32')" type ="button">      312nd tergit index</button><br>
-                            <span class="material-symbols-outlined" id = "am32">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="31" id="2ndTergitInd" min="0" max="1">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m33">   
-                            <button class = "btn btn-head" id="b32" onclick="Open('m33')" type ="button">      32Abdomen color</button><br>
-                            <span class="material-symbols-outlined" id = "am33">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "ooo1" data-value="1" data-index="32">1</button> 
-                                <button class = "btn btn-key" id = "ooop1" data-value="2" data-index="32">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooope1" data-value="3" data-index="32">3</button> 
-                                <button class = "btn btn-key" id = "ooopq1" data-value="5" data-index="32">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooopm1" data-value="6" data-index="32">6</button> 
-                                <button class = "btn btn-key" id = "ooopnn1" data-value="7" data-index="32">7</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "ooo2" data-value="1" data-index="32">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooop2" data-value="2" data-index="32">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "ooope2" data-value="3" data-index="32">3</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "ooopq2" data-value="5" data-index="32">5</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooopm2" data-value="6" data-index="32">6</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>  
-                                <button class = "btn btn-key" id = "ooopnn2" data-value="7" data-index="32">7</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >  
-                                                             
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m34">   
-                            <button class = "btn btn-head" id="b33" onclick="Open('m34')" type ="button">      33Abdomen tone</button><br>
-                            <span class="material-symbols-outlined" id = "am34">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "oook1" data-value="1" data-index="33">1</button> 
-                                <button class = "btn btn-key" id = "ooopk1" data-value="2" data-index="33">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooopek1" data-value="3" data-index="33">3</button> 
-                                <button class = "btn btn-key" id = "ooopqk1" data-value="4" data-index="33">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "oook2" data-value="1" data-index="33">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ooopk2" data-value="2" data-index="33">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "ooopek2" data-value="3" data-index="33">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br> 
-                                <button class = "btn btn-key" id = "ooopqk2" data-value="4" data-index="33">4</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                 
-                                                             
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m35">   
-                            <button class = "btn btn-head" id="b34" onclick="Open('m35')" type ="button">      34epipleural index</button><br>
-                            <span class="material-symbols-outlined" id = "am35">chevron_right</span>
-                            
-                            
-                           <input type="number" class ="inp" step="0.1" data-index="34" id="2ndTergitInd" min="0" max="1">
-
-                            
-                        </div>
-                        <div class="mainbar" id = "m36">   
-                            <button class = "btn btn-head" id="b35" onclick="Open('m36')" type ="button">      35Frons</button><br>
-                            <span class="material-symbols-outlined" id = "am36">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "iiiiii1" data-value="1" data-index="35">1</button> 
-                                <button class = "btn btn-key" id = "iiiiiiv1" data-value="2" data-index="35">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "iiiiii2" data-value="1" data-index="35">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "iiiiiiv2" data-value="2" data-index="35">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m37">   
-                            <button class = "btn btn-head" id="b36" onclick="Open('m37')" type ="button">      36Clypeus</button><br>
-                            <span class="material-symbols-outlined" id = "am37">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "siiiiii1" data-value="1" data-index="36">1</button> 
-                                <button class = "btn btn-key" id = "siiiiiiv1" data-value="2" data-index="36">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "siiiiii2" data-value="1" data-index="36">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "siiiiiiv2" data-value="2" data-index="36">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m38">   
-                            <button class = "btn btn-head" id="b37" onclick="Open('m38')" type ="button">      37rugifer-stragifex</button><br>
-                            <span class="material-symbols-outlined" id = "am38">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "ssiiiiii1" data-value="1" data-index="37">1</button> 
-                                <button class = "btn btn-key" id = "ssiiiiiiv1" data-value="2" data-index="37">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "ssiiiiii2" data-value="1" data-index="37">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ssiiiiiiv2" data-value="2" data-index="37">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m39">   
-                            <button class = "btn btn-head" id="b38" onclick="Open('m39')" type ="button">      38minor pron</button><br>
-                            <span class="material-symbols-outlined" id = "am39">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "dssiiiiii1" data-value="1" data-index="38">1</button> 
-                                <button class = "btn btn-key" id = "dssiiiiiiv1" data-value="2" data-index="38">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "dssiiiiii2" data-value="1" data-index="38">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "dssiiiiiiv2" data-value="2" data-index="38">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m40">   
-                            <button class = "btn btn-head" id="b39" onclick="Open('m40')" type ="button">      39angustifrons</button><br>
-                            <span class="material-symbols-outlined" id = "am40">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "sdssiiiiii1" data-value="1" data-index="39">1</button> 
-                                <button class = "btn btn-key" id = "sdssiiiiiiv1" data-value="2" data-index="39">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "sdssiiiiii2" data-value="1" data-index="39">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "sdssiiiiiiv2" data-value="2" data-index="39">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
-                        <div class="mainbar" id = "m41">   
-                            <button class = "btn btn-head" id="b40" onclick="Open('m41')" type ="button">      40dubitor</button><br>
-                            <span class="material-symbols-outlined" id = "am41">chevron_right</span>
-                            
-                            <div class="obj1">
-                                <button class = "btn btn-key" id = "ssdssiiiiii1" data-value="1" data-index="40">1</button> 
-                                <button class = "btn btn-key" id = "ssdssiiiiiiv1" data-value="2" data-index="40">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" >
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                            </div>  
-                            <div class="obj2">
-                                <button class = "btn btn-key" id = "ssdssiiiiii2" data-value="1" data-index="40">1</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>
-                                <button class = "btn btn-key" id = "ssdssiiiiiiv2" data-value="2" data-index="40">2</button><br>
-                                <img class = "img-res" src="/img/Dusona falcator.png" ><br>                              
-                            </div>
-                        </div>
+         <header class="Title">
+            
+            <div id= "MenuIcon" ><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="currentColor"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></div>
+           <h2>Key to swedish species of Dusona</h2>
+           <div style="visibility: hidden;" id= "MenuIcon" ><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="currentColor"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg></div>
+         </header>
+         <div id="Big2" style="display: block;">
+                    
+            <div id="infoBig">
+                
+                
+                <div id="BigImgText">something whent wrong :(</div>
+                
+            </div>
+            
+         </div>
+    
+    
+            <div id = "btnCont" style="position: relative;">
+                <a href ='/html/Homolobus.html' style="color:#0c0c0c" class="btn btn-white2">Information</a>
+                <a href ='/html/HomolobusG.html' style="color:#0c0c0c" class="btn btn-white1">Gallery<a>
+                <a href ='/html/HomolobusKey.html' style="color:#f3f3f3" class="btn btn-green2" >Key</a>
+                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" style="color: rgb(0, 160, 135); font-size: 2.5em; position: absolute; top: -0.3em; right: 5%" data-value="<h2>About the key</h2><div class='line-1'></div>This key includes all Dusona species handled in Meier(2022) and all listed as occuring in Sweden by Dyntaxa in 2023. It is mainly based on the descriptions given in Hinz & Horstmann (2004) and Horstmann (2009).<br><br>This is very much still a work in progres. If you find any errors, have any sugestions or want the back-end data, contact me at info@bugweb.net.
+                    <br><h2>Using the key</h2><div class='line-1'></div>">help</span>
+            </div>
+          
+            <div class="Main">
+                
+                
+                <div class="top"> <div id="dip">Descriptors</div> <button class="reset" onclick="Reset()"></button>
+                </div>
+                <div class="top2" id="top2">
+                    Remaining taxa
                 </div>
                 
-             </nav>
-             <div class="top3" id="top3">
-                Remaining taxa
-            </div>
-            
-            <nav class="sidebar">
-                <div class="scrollbox">
-                    <div class="scrollbox-inner">
-                        <div id="specCont"> 
-                        </div>
-                       
+                <nav class="leftbar" id="leftbar">
+                  <div class="scrollbox">
+                        <div class="scrollbox-inner">
+                            <div class="mainbar" id = "m1"> 
+                              
+                                <button class = "btn btn-head" id="b0" onclick="Open('m1')" type ="button" >      0Epipleural fold</button><br>
+                                <span class="material-symbols-outlined" id = "am1">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><div class='line-1'></div>The epipleural fold is a boundary that divides the epipleurite from the rest of the third tergite. It's present in about one third of Palearctic species and can take the shape of a line, crease, or bulge, often darkened. Its size and location may vary, ranging from being limited to the front edge of the tergite to almost running along its full length. <br><br>It can be quite indistinct in some specimens, so some care should be taken to not miss it.">help</span>
+    
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "1101"data-value="1" data-index="0" type ="button">Epipleurite of the 3rd gastral tergite separated from the tergite by a crease at least anteriorly</button> 
+                                    <button class = "btn btn-key" id = "2101" data-value="2" data-index="0" type ="button">Epipleurite of the 3rd gastral tergite completely fused with the tergite</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "1102"data-value="1" data-index="0"type ="button">Epipleurite of the 3rd gastral tergite separated from the tergite by a crease at least anteriorly</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "2102" data-value="2" data-index="0" type ="button">Epipleurite of the 3rd gastral tergite completely fused with the tergite</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                            </div>
+                            <div class="mainbar" id = "m12">   
+                                <button class = "btn btn-head" id="b11" onclick="Open('m12')" type ="button">      11Black lateral stripe</button><br>
+                                <span class="material-symbols-outlined" id = "am12">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Black lateral stripe</h2><div class='line-1'></div>Species with the epipleurite of the 3rd gastral tergite fused often have a black longitudinal mark on this tergite called the black lateral stripe. It is located at the base of the tergite on each side. <br><br>This mark can be hard to see in some specimens depending on the base coloration, so both sides of the tergite should be carefully investigated.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee32311" data-value="1" data-index="11">Black lateral stripe present and distinct</button> 
+                                    <button class = "btn btn-key" id = "aaae32311" data-value="2" data-index="11">Black lateral stripe absent or very indistinct</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee32312" data-value="1" data-index="11">Black lateral stripe present and distinct</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae32312" data-value="2" data-index="11">Black lateral stripe absent or very indistinct</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m33">   
+                                <button class = "btn btn-head" id="b32" onclick="Open('m33')" type ="button">      32Abdomen color patern</button><br>
+                                <span class="material-symbols-outlined" id = "am33">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Abdomen color patern</h2><div class='line-1'></div>Most dusona species have the abdomen (excluding the petiole) at least partially marked with black on a yellow or red base.                                        ">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "ooo1" data-value="1" data-index="32">Black</button> 
+                                    <button class = "btn btn-key" id = "ooop1" data-value="2" data-index="32">Black basally and apically, red or yellow centrally (at least 4th tergit partially red or yellow)</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ooope1" data-value="3" data-index="32">Black basally, rest red or yellow (some black spots might be present)</button> 
+                                    <button class = "btn btn-key" id = "ooopq1" data-value="5" data-index="32">All segments mainly black dorsally, red or yellow on the sides of the central tergites</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ooopm1" data-value="6" data-index="32">Black with only the second and third tergite marked with red or yellow</button> 
+                                    <button class = "btn btn-key" id = "ooopnn1" data-value="7" data-index="32">Other coloration</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "ooo2" data-value="1" data-index="32">Black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ooop2" data-value="2" data-index="32">Black basally and apically, red or yellow centrally (at least 4th tergit partially red or yellow)</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "ooope2" data-value="3" data-index="32">Black basally, rest red or yellow (some black spots might be present)</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "ooopq2" data-value="5" data-index="32">All segments mainly black dorsally, red or yellow on the sides of the central tergites</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ooopm2" data-value="6" data-index="32">Black with only the second and third tergite marked with red or yellow</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>  
+                                    <button class = "btn btn-key" id = "ooopnn2" data-value="7" data-index="32">Other coloration</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >  
+                                                                 
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m34">   
+                                <button class = "btn btn-head" id="b33" onclick="Open('m34')" type ="button">      33Abdomen tone</button><br>
+                                <span class="material-symbols-outlined" id = "am34">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Abdomen tone</h2><div class='line-1'></div>The color of the bright parts of the abdomen varies between yelowish orange to red.                                                                                                                        ">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "oook1" data-value="1" data-index="33">Colored areas of abdomen red</button> 
+                                    <button class = "btn btn-key" id = "ooopk1" data-value="2" data-index="33">Colored areas of abdomen intermediate</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                    <button class = "btn btn-key" id = "ooopqk1" data-value="4" data-index="33">Colored areas of abdomen yellowish orange or yellow</button><br>
+                                    
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "oook2" data-value="1" data-index="33">Colored areas of abdomen red</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ooopk2" data-value="2" data-index="33">Colored areas of abdomen intermediate</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    
+                                    <button class = "btn btn-key" id = "ooopqk2" data-value="4" data-index="33">Colored areas of abdomen yellowish orange or yellow</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                     
+                                                                 
+                                </div>
+                            </div>                          
+                            <div class="mainbar" id = "m10">   
+                                <button class = "btn btn-head" id="b9" onclick="Open('m10')" type ="button">      9Number of flagelomeres</button><br>
+                                <span class="material-symbols-outlined" id = "am10">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><div class='line-1'></div>Flagelomeres make up most of the length of the antennae in ichneumonid wasp. All but the basal two antennal segments are considered flagelomeres and are all relatiely uniform in Dusona species. The number of flagelomeres is a usefull character for identification wich this step focuses on. ">help</span>
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" data-index="9" id="flagelomeres" min="20" max="80"> <div style="display:flex; flex-direction: row; margin-top: 0.6em;"> flagelomeres</div>
+                                </div>
+                                
+                            </div>                                            
+                            <div class="mainbar" id = "m5">   
+                                <button class = "btn btn-head" id="b4" onclick="Open('m5')" type ="button">      4Antennal carina</button><br>
+                                <span class="material-symbols-outlined" id = "am5">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Antennal carina</h2><div class='line-1'></div>The antennal carina is a ring-shaped ridge surrounding the base of the antennae. It is rarely used as a diagnostic character among ichneumonids, making its importance for Dusona identification quite unique. It is low and inconspicuous in most species, however, in several species the antennal carina shows a large diversity of dorsal extensions: 
+                                    <ul> <li>Antennal carina slightly raised dorsally, this extension covered by transverse striate(step 2).</li>
+                                         <li>Antennal carina widened dorsally into a nose-like projection, wich can either inconspicuous (step 3) or rather large with transverse striae (step 4).</li>
+                                        <li>Antennal carina raised and strongly bent upwards to form a ear-like, crescent-shaped plate (step 5).</li> </ul>">help</span>
+    
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee1" data-value="1" data-index="4">1Antennal carina narrow and low</button> 
+                                    <button class = "btn btn-key" id = "eeee1" data-value="5" data-index="4">5Antennal carina slightly raised dorsally, this extension covered by transverse striate</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae1" data-value="3" data-index="4">3Antennal carina widened dorsally into a inconspicuous nose-like projection</button>
+                                    <button class = "btn btn-key" id = "wwww1"data-value="4" data-index="4">4Antennal carina widened dorsally into a large nose-like projection with transverse striae</button> <br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "rrrr1"data-value="6" data-index="4">6Antennal carina raised and strongly bent upwards to form a ear-like, crescent-shaped plate</button> <br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee2" data-value="1" data-index="4">1Antennal carina narrow and low</button> 
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeee2" data-value="5" data-index="4">5Antennal carina slightly raised dorsally, this extension covered by transverse striate</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae2" data-value="3" data-index="4">3Antennal carina widened dorsally into a inconspicuous nose-like projection</button>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "wwww2"data-value="4" data-index="4">4Antennal carina widened dorsally into a large nose-like projection with transverse striae</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "rrrr2"data-value="6" data-index="4">6Antennal carina raised and strongly bent upwards to form a ear-like, crescent-shaped plate</button>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div> 
+                                
+                            </div>
+                            <div class="mainbar" id = "m3">   
+                                <button class = "btn btn-head" id="b2" onclick="Open('m3')" type ="button">      2Temple constriction</button><br>
+                                <span class="material-symbols-outlined" id = "am3">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Temple constriction</h2><div class='line-1'></div>This step refers to the constriction of the temples behind the eyes. It is measured by drawing two lines on each side of the head that are tangential to the eyes and temple, and then observing where they intersect on the body. <br><br>This can be quite difficult if the head is in an unnatural position, so in that case it is recomended to make rough estimate and select multiple options.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "1211" data-value="1" data-index="2" type ="button">1Temples behind eyes weakly constricted, tangential lines on eyes and temples intersect on the gaster</button> 
+                                    <button class = "btn btn-key" id = "4211" data-value="4" data-index="2" type ="button">4Temples behind eyes slightly constricted, tangential lines on eyes and temples intersect on the propodeum</button>
+                                    
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "5211" data-value="5" data-index="2" type ="button">Temples behind eyes moderately constricted, tangential lines on eyes and temples intersect on the scutelum</button> 
+                                    <button class = "btn btn-key" id = "2211" data-value="2" data-index="2" type ="button">Temples behind eyes strongly constricted, tangential lines on eyes and temples intersect on the mesoscutum</button>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "1212" data-value="1" data-index="2">1Temples behind eyes weakly constricted, tangential lines on eyes and temples intersect on the gaster</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "4212" data-value="4" data-index="2">4Temples behind eyes slightly constricted, tangential lines on eyes and temples intersect on the propodeum</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "5212" data-value="5" data-index="2">5Temples behind eyes moderately constricted, tangential lines on eyes and temples intersect on the scutelum</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "2212" data-value="2" data-index="2">2Temples behind eyes strongly constricted, tangential lines on eyes and temples intersect on the mesoscutum</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div> 
+       
+                            </div>    
+                            <div class="mainbar" id = "m8">   
+                                <button class = "btn btn-head" id="b7" onclick="Open('m8')" type ="button">      7Genal junction</button><br>
+                                <span class="material-symbols-outlined" id = "am8">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Genal junction</h2><div class='line-1'></div>The genal carina (wich is continuous with the more dorsal occipital carina) and the hypostomal carina meet at or close to the mandible. This step focuses on the fact that in some species the junction between these carina is distinctly raised, forming an lopsided pyramid. <br><br>This can be difficult to observe in specimens where the head is positioned close to the body. It might then be necessary to relax the specimen in water in order to move the head or remove the head entirely.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee321" data-value="1" data-index="7">1Junction of the genal and the hypostomal carina distinctly raised forming a lopsided triangular pyramid</button> 
+                                    <button class = "btn btn-key" id = "aaae321" data-value="2" data-index="7">2Junction of the genal and the hypostomal carina not forming a lopsided triangular pyramid</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                   
+                                
+                                    
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee322" data-value="1" data-index="7">1Junction of the genal and the hypostomal carina distinctly raised forming a lopsided triangular pyramid</button> 
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae322" data-value="2" data-index="7">2Junction of the genal and the hypostomal carina not forming a lopsided triangular pyramid</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m26">   
+                                <button class = "btn btn-head" id="b25" onclick="Open('m26')" type ="button">      25Maxillary palp color</button><br>
+                                <span class="material-symbols-outlined" id = "am26">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Maxillary palp color</h2><div class='line-1'></div>The maxillary palps are the longer of two sets of palps found near an insects mouth. In Dusona species the color of the maxillary pals varies between yellow and black.            <br><br>If the color is intermediate between the options of this step then the specimen should key in both directions.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeeel1" data-value="1" data-index="25">1Maxillary palps at least partially yellow or light brown</button> 
+                                    <button class = "btn btn-key" id = "eeeeel1" data-value="2" data-index="25">2Maxillary palps dark brown or black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeeel2" data-value="1" data-index="25">1Maxillary palps at least partially yellow or light brown</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeel2" data-value="2" data-index="25">2axillary palps dark brown or black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m27">   
+                                <button class = "btn btn-head" id="b26" onclick="Open('m27')" type ="button">      26Madible color</button><br>
+                                <span class="material-symbols-outlined" id = "am27">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Madible palp color</h2><div class='line-1'></div>The mandibles are most insects main mouth parts. In Dusona species the color of the mandibles varies between yellow and black. <br><br>In some species are the mandibles very narrowly marked with yellow or brown, so care should be taken to not miss these areas.                                                                             ">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeeeh1" data-value="1" data-index="26">1Mandibles at least partially yellow, brown or red</button> 
+                                    <button class = "btn btn-key" id = "eeeeeh1" data-value="2" data-index="26">2Mandibles black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeeeh2" data-value="1" data-index="26">1Mandibles at least partially yellow, brown or red</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeeh2" data-value="2" data-index="26">2Mandibles black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m11">   
+                                <button class = "btn btn-head" id="b10" onclick="Open('m11')" type ="button">      10Pleural epicnemial carina</button><br>
+                                <span class="material-symbols-outlined" id = "am11">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Pleural epicnemial carina</h2><div class='line-1'></div>The epicnemial carina separates the mesopleuron from the epicnemium. It is divided into two parts, one ventral and one pleural. It is the pleural part, wich extends on to the mesopleuron that this step focuses on.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee3231" data-value="1" data-index="10">1The pleural part of the epicnemial carina distinct</button> 
+                                    <button class = "btn btn-key" id = "aaae3231" data-value="2" data-index="10">2The pleural part of the epicnemial carina is replaced by short wrinkles for its entire length or completely absent</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee3232" data-value="1" data-index="10">1The pleural part of the epicnemial carina distinct</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232" data-value="2" data-index="10">2The pleural part of the epicnemial carina is replaced by short wrinkles for its entire length or completely absent</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>                                                      
+                            <div class="mainbar" id = "m14">   
+                                <button class = "btn btn-head" id="b13" onclick="Open('m14')" type ="button">      13Ventral epicnemial carina</button><br>
+                                <span class="material-symbols-outlined" id = "am14">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Ventral epicnemial carina</h2><div class='line-1'></div>The epicnemial carina separates the mesopleuron from the epicnemium. It is divided into two parts, one ventral and one pleural. It is the ventral part, wich is found behind the front coxae that this step focuses on.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee3232a1" data-value="1" data-index="13">The ventral part of the epicnemial carina low pr indistinctly raised</button> 
+                                    <button class = "btn btn-key" id = "aaae3232a1" data-value="2" data-index="13">The ventral part of the epicnemial carina distinctly raised</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee3232a2" data-value="1" data-index="13">The ventral part of the epicnemial carina low pr indistinctly raised</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232a2" data-value="2" data-index="13">The ventral part of the epicnemial carina distinctly raised</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m15">   
+                                <button class = "btn btn-head" id="b14" onclick="Open('m15')" type ="button">      14Mesopleuron punctation</button><br>
+                                <span class="material-symbols-outlined" id = "am15">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Mesopleuron punctation</h2><div class='line-1'></div>If the central and ventral parts of the mesopleuron is clearly punctate, not punctate, rugose punctate (no  clear punctures, more rough and wrinkly) or wrinkled.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee3232ab1" data-value="1" data-index="14">1Mesopleurum with distinct punctures centrally and ventrally</button> 
+                                    <button class = "btn btn-key" id = "aaae3232ab1" data-value="2" data-index="14">2Mesopleurum without distinct punctures</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232ac1" data-value="6" data-index="14">6Mesopleurum densely rugoso-punctate or wrinkled, without distinct punctures</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee3232ab2" data-value="1" data-index="14">1Mesopleurum with distinctly separated punctures centrally and ventrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232ab2" data-value="2" data-index="14">2Mesopleurum without distinct punctures</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232ac2" data-value="6" data-index="14">6Mesopleurum densely rugoso-punctate or wrinkled, without distinct punctures</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m16">   
+                                <button class = "btn btn-head" id="b15" onclick="Open('m16')" type ="button">      15Mesopleuron texture</button><br>
+                                <span class="material-symbols-outlined" id = "am16">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Mesopleuron texture</h2><div class='line-1'></div>Refers to the texture beneath punctation or rugosity on the mesopleuron, wich can be either smooth or coriaceous. <br><br>Note that the mesopleuron still can be shiny even though it is coriaceous.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee3232az1" data-value="1" data-index="15">Texture beneath scupture and punctuation smooth</button> 
+                                    <button class = "btn btn-key" id = "aaae3232az1" data-value="2" data-index="15">Texture beneath scupture and punctuation coriaceous</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee3232az2" data-value="1" data-index="15">Texture beneath scupture and punctuation smooth</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232az2" data-value="2" data-index="15">Texture beneath scupture and punctuation coriaceous</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m17">   
+                                <button class = "btn btn-head" id="b16" onclick="Open('m17')" type ="button">      16Speculum texture</button><br>
+                                <span class="material-symbols-outlined" id = "am17">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Speculum texture</h2><div class='line-1'></div>The speculum is a usually shining area or pit found centrally on the posterior half of the mesopleuron that almost always lack punctation. It can be quite hard to differentiate it from the area infront of it in many Dusona species, but its underying texture is often different from the rest of the mesopleuron.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee3232abt1" data-value="1" data-index="16">Speculum more or less smooth, usually shining</button> 
+                                    <button class = "btn btn-key" id = "aaae3232abt1" data-value="2" data-index="16">Speculum coriaceous or granulate strigose, often more dull</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee3232abt2" data-value="1" data-index="16">Speculum more or less smooth, usually shining</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae3232abt2" data-value="2" data-index="16">Speculum coriaceous or granulate strigose, often more dull</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m18">   
+                                <button class = "btn btn-head" id="b17" onclick="Open('m18')" type ="button">      17Area in front of speculum</button><br>
+                                <span class="material-symbols-outlined" id = "am18">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Area in front of speculum</h2><div class='line-1'></div>The area in front of the speculum is a area on the mesopleuron with a very variable sculpture among Dusona species. It can either be finely striate, granulate strigose/coriaceous (often with a wrinkles in the upper area) or irregularly wrinkled.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eq1" data-value="1" data-index="17">Area in front of speculum finely striate centrally</button> 
+                                    <button class = "btn btn-key" id = "ee1" data-value="2" data-index="17">Area in front of speculum granulate strigose or coriaceous centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "et1" data-value="3" data-index="17">Area in front of speculum wrinkled centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eq2" data-value="1" data-index="17">Area in front of speculum finely striate centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ee2" data-value="2" data-index="17">Area in front of speculum granulate strigose or coriaceous centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "et2" data-value="3" data-index="17">Area in front of speculum wrinkled centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m29">   
+                                <button class = "btn btn-head" id="b28" onclick="Open('m29')" type ="button">      28Hind tibia color</button><br>
+                                <span class="material-symbols-outlined" id = "am29">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Hind tibia color</h2><div class='line-1'></div>The hind tibia is the second large segment of the hind legs. In Dusona species the color of the hind tibia varies between black, yellow with bands basally and apically and red.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeeehls1" data-value="1" data-index="28">Dark basally and apically, brighter centrally</button> 
+                                    <button class = "btn btn-key" id = "eeeeehls1" data-value="2" data-index="28">Entierly yellow or red</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eqeeehss1" data-value="3" data-index="28">Yellow or red with dark tip</button> 
+                                    <button class = "btn btn-key" id = "eeeeehjs1" data-value="4" data-index="28">Entierly black or dark brown</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeehms1" data-value="6" data-index="28">Yellow or red with dark base</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeeehls2" data-value="1" data-index="28">Dark basally and apically, brighter centrally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeehls2" data-value="2" data-index="28">Entierly yellow or red</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "eqeeehss2" data-value="3" data-index="28">Yellow or red with dark tip</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "eeeeehjs2" data-value="4" data-index="28">Entierly black or dark brown</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "eeeeehms2" data-value="6" data-index="28">Yellow or red with dark base</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m28">   
+                                <button class = "btn btn-head" id="b27" onclick="Open('m28')" type ="button">      27Hind femur color</button><br>
+                                <span class="material-symbols-outlined" id = "am28">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Hind femur color</h2><div class='line-1'></div>The hind femur is the first large segment of the hind legs. In Dusona species the color of the hind femur varies between black and red.                <br><br>In some specimens the color might not quite fit the first three steps. In that case the forth segment should be selected.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeeehl1" data-value="1" data-index="27">Hind femur black</button> 
+                                    <button class = "btn btn-key" id = "eeeeehl1" data-value="2" data-index="27">Hind femur black with orange/red tip</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eqeeehs1" data-value="3" data-index="27">Hind femur mainly orange/red</button> 
+                                    <button class = "btn btn-key" id = "eeeeehj1" data-value="4" data-index="27">Hind femur red with black marks or black with red marks</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                   
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeeehl2" data-value="1" data-index="27">Hind femur black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeehl2" data-value="2" data-index="27">Hind femur black with orange/red tip</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "eqeeehs2" data-value="3" data-index="27">Hind femur mainly orange/red</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                    <button class = "btn btn-key" id = "eeeeehj2" data-value="4" data-index="27">Hind femur red with black marks or black with red marks</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br> 
+                                                            
+                                </div>
+                            </div>                  
+                            <div class="mainbar" id = "m31">   
+                                <button class = "btn btn-head" id="b30" onclick="Open('m31')" type ="button">      302nd tergite color</button><br>
+                                <span class="material-symbols-outlined" id = "am31">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>2nd tergit color</h2><div class='line-1'></div>The second tergite of the abdomen varies between black, red and yellow in Dusona species. This step concerns the color of the tergite dorsally.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeeehzz1" data-value="1" data-index="30">2nd tergite black dorsally (often with red areas laterally)</button> 
+                                    <button class = "btn btn-key" id = "eeeeehzz1" data-value="2" data-index="30">2nd tergite at least posteriorly red or yellow dorsally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeeehzz2" data-value="1" data-index="30">2nd tergite black dorsally (often with red areas laterally)</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeeehzz2" data-value="2" data-index="30">2nd tergite at least posteriorly red or yellow dorsally</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m22">   
+                                <button class = "btn btn-head" id="b21" onclick="Open('m22')" type ="button">      21Glymma</button><br>
+                                <span class="material-symbols-outlined" id = "am22">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Glymma</h2><div class='line-1'></div>The glymma is a pit or grove on the sides of the petiole in front of the spiracle. It is very variable among Dusona species, often missing entirely. <br><br>It is important to understand the difference between glymma and lateral area. The latter is a narrow and shallow grove that fades out posterioly while a glymma usually is shorter and deeper. If both glymma and lateral area is present then the glymma is found in the anterior corner of the lateral area. <br><br>In case it's presence or absence is dubious the species should be keyable through both options of this step.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqee1" data-value="1" data-index="21">Glymma present</button> 
+                                    <button class = "btn btn-key" id = "eeees1" data-value="2" data-index="21">Glymma absent</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqee2" data-value="1" data-index="21">Glymma present</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeees2" data-value="2" data-index="21">Glymma absent</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                  
+                                    
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m23">   
+                                <button class = "btn btn-head" id="b22" onclick="Open('m23')" type ="button">      22Area in front of glymma</button><br>
+                                <span class="material-symbols-outlined" id = "am23">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Area in front of glymma</h2><div class='line-1'></div>The area in front of the glymma on the petiole is in most Dusona species more or less smooth, but a couple of species are characterized by a row of transverse striae in this area. <br><br>In case the presence of these striae is dubious the species should be keyable through both options of this step.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqeee1" data-value="1" data-index="22">1</button> 
+                                    <button class = "btn btn-key" id = "eeeee1" data-value="2" data-index="22">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqeee2" data-value="1" data-index="22">1</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eeeee2" data-value="2" data-index="22">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>              
+                            <div class="mainbar" id = "m2">   
+                                <button class = "btn btn-head" id="b1" onclick="Open('m2')" type ="button">      1size</button><br>
+                                <span class="material-symbols-outlined" id = "am2">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Size</h2><div class='line-1'></div>Size refers to the length of the animal measured from the head (not including antennae) to the tip of the abdomen when in a natural pose. Note that if the abdomen is hanging or is pointed in a strange directions the final mesurment might become inacurate.">help</span>
+                                
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" data-index="1" id="size" min="1" max="25"> <div style="display:flex; flex-direction: row; margin-top: 0.6em;"> mm</div>
+                                </div>
+                            </div>                     
+                            <div class="mainbar" id = "m9">   
+                                <button class = "btn btn-head" id="b8" onclick="Open('m9')" type ="button">      8Genal index</button><br>
+                                <span class="material-symbols-outlined" id = "am9">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><div class='line-1'></div>The genal index is defined as the ratio of the length of the hypostomal carina between its junction with the genal carina and the base of the mandible to the basal width of the mandible">help</span>
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" step="0.1" data-index="8" id="genalInd" min="0" max="2">
+                                </div>
+                               
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m6">   
+                               
+    
+                                <button class = "btn btn-head" id="b5" onclick="Open('m6')" type ="button">      5Malar space index</button><br>
+                                <span class="material-symbols-outlined" id = "am6">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Malar space index</h2><div class='line-1'></div>The malar space is defined as the shortest distance between the base of the mandible and the eyes. Malar space index refers to the ratio of this distance to the basal width of the mandible.">help</span>
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" step="0.1" data-index="5" id="ocellar" min="0" max="2">
+                                </div>
+                                
+    
+                                
+                            </div>                           
+                            <div class="mainbar" id = "m4">   
+                                <button class = "btn btn-head" id="b3" onclick="Open('m4')" type ="button">      3Ocellar index</button><br>
+                                <span class="material-symbols-outlined" id = "am4">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Ocellar index</h2><div class='line-1'></div>Ocellar index is defined as the ratio of the shortest distance between the eye and the hind ocellus to the longest diameter of the hind ocellus. <br><br>This can be dificult to messure, so it's recomended to only use this step if needed.">help</span>
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" step="0.1" data-index="3" id="ocellar" min="0.1" max="2">
+                                </div>
+                               
+                               
+                            </div>
+                            <div class="mainbar" id = "m35">   
+                                <button class = "btn btn-head" id="b34" onclick="Open('m35')" type ="button">      34Epipleural index</button><br>
+                                <span class="material-symbols-outlined" id = "am35">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural index</h2><div class='line-1'></div>The epipleural index is defined as the ratio beteween the length of the epipleural fold to the length of the third tergite. If the fold or crease is indistinct, it can usually be distinguished by its darker color compared to the rest of the edge.<br><br>In some species such as Dusona insignita, the third laterotergite is separated from the tergite by a fold but then also secondarily folded back. In such cases, only the length of the crease anterior to the secondary fold back should be measured.">help</span>
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" step="0.1" data-index="34" id="2ndTergitInd" min="0" max="1">
+                                </div>
+                               
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m25">   
+                                <button class = "btn btn-head" id="b24" onclick="Open('m25')" type ="button">      24Ovipositor index</button><br>
+                                <span class="material-symbols-outlined" id = "am25">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Ovipositor index</h2><div class='line-1'></div>The ovipositor index is defined as the ratio of the visible length of the ovipositor sheaths seen from the side in their normal position to the length of the 1st tarsal segment of the hind tarsus(hind basitarsus).            <br><br>This index is for obvious reasons only applicable for female specimens.">help</span>
+                                
+                                <div style="display:flex; flex-direction: row; margin-top: 0.15em; margin-bottom: 0.5em; align-items: center; justify-content: center;">
+                                    <input type="number" class ="inp" step="0.1" data-index="24" id="ovind" min="0" max="2">
+                                </div>
+                               
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m36">   
+                                <button class = "btn btn-head" id="b35" onclick="Open('m36')" type ="button">      35Frons</button><br>
+                                <span class="material-symbols-outlined" id = "am36">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Frons</h2><div class='line-1'></div>This step is in this key only used to separate Dusona carinifrons from two similar but smaller species. D.carinifrons has a distinct keel on the frons and between the antennae. This structure is missing or indistinct in D.genalis and D.perditor.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "iiiiii1" data-value="1" data-index="35">Frons with a strong medinan longitudinal keel which is raised medially</button> 
+                                    <button class = "btn btn-key" id = "iiiiiiv1" data-value="2" data-index="35">Frons without without or with a rather weak median longitudinal keel</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "iiiiii2" data-value="1" data-index="35">Frons with a strong medinan longitudinal keel which is raised medially</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "iiiiiiv2" data-value="2" data-index="35">Frons without without or with a rather weak median longitudinal keel</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m37">   
+                                <button class = "btn btn-head" id="b36" onclick="Open('m37')" type ="button">      36Clypeus</button><br>
+                                <span class="material-symbols-outlined" id = "am37">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Clypeus</h2><div class='line-1'></div>This step is in this key only used to separate two very similar species. Dusona tenuis has clear and separate punctures on its ventral part while Dusona aversa has a densely rugose-punctate clypeus with only a narrow ventral band of sparse punctures.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "siiiiii1" data-value="1" data-index="36">Clypeus densely rugose-punctate ventrally as well as dorsally, only a narrow ventral band punctate</button> 
+                                    <button class = "btn btn-key" id = "siiiiiiv1" data-value="2" data-index="36">Clypeus with well separated punctures on its ventral 0.4-0.7</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "siiiiii2" data-value="1" data-index="36">Clypeus densely rugose-punctate ventrally as well as dorsally, only a narrow ventral band punctate</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "siiiiiiv2" data-value="2" data-index="36">Clypeus with well separated punctures on its ventral 0.4-0.7</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>                        
+                            <div class="mainbar" id = "m39">   
+                                <button class = "btn btn-head" id="b38" onclick="Open('m39')" type ="button">      38Pronotum flange</button><br>
+                                <span class="material-symbols-outlined" id = "am39">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Pronotum flange</h2><div class='line-1'></div>This step separates the small species Dusona minor from similar species. The hind corner of the pronotum is in this species produced intio a flange which usually extends about as far back as the tegula. <br><br>This flange is most easily observed from above.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "dssiiiiii1" data-value="1" data-index="38">Hind corner of pronotum produced to a flange, which projects about as far as the tegula</button> 
+                                    <button class = "btn btn-key" id = "dssiiiiiiv1" data-value="2" data-index="38">Hind corner with no such structure</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "dssiiiiii2" data-value="1" data-index="38">Hind corner of pronotum produced to a flange, which projects about as far as the tegula</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "dssiiiiiiv2" data-value="2" data-index="38">Hind corner with no such structure</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>                          
+                            <div class="mainbar" id = "m41">   
+                                <button class = "btn btn-head" id="b40" onclick="Open('m41')" type ="button">      40D.angustifrons-D.dubitor</button><br>
+                                <span class="material-symbols-outlined" id = "am41">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>D.angustifrons-D.dubitor</h2><div class='line-1'></div>This step separates two very similar species. See options.">help</span>
+                                
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "ssdssiiiiii1" data-value="1" data-index="40">1Genal carina not raised behind the eyes</button> 
+                                    <button class = "btn btn-key" id = "ssdssiiiiiiv1" data-value="2" data-index="40">2Genal carina distinctly raised behind the eyes</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "ssdssiiiiii2" data-value="1" data-index="40">1Genal carina not raised behind the eyes</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ssdssiiiiiiv2" data-value="2" data-index="40">2Genal carina distinctly raised behind the eyes</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m38">   
+                                <button class = "btn btn-head" id="b37" onclick="Open('m38')" type ="button">      37D.rugifer-D.stragifex</button><br>
+                                <span class="material-symbols-outlined" id = "am38">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>D.rugifer-D.stragifex</h2><div class='line-1'></div>This step separates two very similar species. See options.">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "ssiiiiii1" data-value="1" data-index="37">Hind tibia broadly yellow medially, brown basally and apically. Male front coxae marked with yellow</button> 
+                                    <button class = "btn btn-key" id = "ssiiiiiiv1" data-value="2" data-index="37">Hind tibia often redish medially. black basally and apically, the apical mark sometimes absent. Male front coxae black</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "ssiiiiii2" data-value="1" data-index="37">1</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ssiiiiiiv2" data-value="2" data-index="37">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m7" style="display: none">   
+                                <!--Generally, the shape of the areolet has strong
+                                infraspecific variability. Therefore this character
+                                should not be used in the key, and the descriptions do not
+                                give the full variability, but usually refer to the
+                                holotype of the respective species only-->
+                                <button class = "btn btn-head" id="b6" onclick="Open('m7')" type ="button">      6Areolet</button><br>
+                                <span class="material-symbols-outlined" id = "am7">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Areolet</h2><div class='line-1'></div>">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee31" data-value="1" data-index="6">Areolet stalked, receiving the 2nd reccurent vein distinctly distally of the middle</button> 
+                                    <button class = "btn btn-key" id = "aaae31" data-value="2" data-index="6">Areolet stalked, receiving the 2nd reccurent vein distinctly infront of or at the middle</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "wwww31"data-value="3" data-index="6">areolet pointed</button>
+                                    <button class = "btn btn-key" id = "wwwwwww31"data-value="4" data-index="6">areolet sessile</button><br> 
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                
+                                    
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee32" data-value="1" data-index="6">Areolet stalked, receiving the 2nd reccurent vein distinctly distally of the middle</button> 
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae32" data-value="2" data-index="6">Areolet stalked, receiving the 2nd reccurent vein distinctly infront of or at the middle</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "wwww32"data-value="3" data-index="6">areolet pointed</button> 
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "wwwwwww32"data-value="4" data-index="6">areolet sessile</button> 
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div> 
+                                
+                            </div>
+                            <div class="mainbar" id = "m40" style="display: none"> <!--not needed-->  
+                                <button class = "btn btn-head" id="b39" onclick="Open('m40')" type ="button">      39angustifrons</button><br>
+                                <span class="material-symbols-outlined" id = "am40">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>angustifrons</h2><br>">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "sdssiiiiii1" data-value="1" data-index="39">1</button> 
+                                    <button class = "btn btn-key" id = "sdssiiiiiiv1" data-value="2" data-index="39">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "sdssiiiiii2" data-value="1" data-index="39">1</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "sdssiiiiiiv2" data-value="2" data-index="39">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>                              
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m32" style="display: none">   <!--no!--> 
+                                <button class = "btn btn-head" id="b31" onclick="Open('m32')" type ="button">      312nd tergit index</button><br>
+                                <span class="material-symbols-outlined" id = "am32">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><div class='line-1'></div>">help</span>
+                                
+                               <input type="number" class ="inp" step="0.1" data-index="31" id="2ndTergitInd" min="0" max="1">
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m30" style="display: none"> <!--no!-->  
+                                <button class = "btn btn-head" id="b29" onclick="Open('m30')" type ="button">      29Tibia ring</button><br>
+                                <span class="material-symbols-outlined" id = "am30">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Tibia ring</h2><br>">help</span>
+                                
+                               <input type="number" class ="inp" step="0.1" data-index="29" id="tibiaringlInd" min="0" max="1">
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m24" style="display: none">  <!--no-->  
+                                <button class = "btn btn-head" id="b23" onclick="Open('m24')" type ="button">      23Thyridal index</button><br>
+                                <span class="material-symbols-outlined" id = "am24">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><br>">help</span>
+                                
+                               <input type="number" class ="inp" step="0.1" data-index="23" id="tiblInd" min="0" max="3">
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m19" style="display: none">  <!--no--> 
+                                <button class = "btn btn-head" id="b18" onclick="Open('m19')" type ="button">      18Nervelar Index</button><br>
+                                <span class="material-symbols-outlined" id = "am19">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><br>">help</span>
+                                
+                               <input type="number" class ="inp" step="0.1" data-index="18" id="NervInd" min="0" max="2">
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m20" style="display: none">    <!--no--> 
+                                <button class = "btn btn-head" id="b19" onclick="Open('m20')" type ="button">      19Spur Index</button><br>
+                                <span class="material-symbols-outlined" id = "am20">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><br>">help</span>
+                                
+                               <input type="number" class ="inp" step="0.1" data-index="19" id="tiblInd" min="0" max="2">
+    
+                                
+                            </div>
+                            <div class="mainbar" id = "m21" style="display: none">    <!--need better data--> 
+                                <button class = "btn btn-head" id="b20" onclick="Open('m21')" type ="button">      20Propodeum depression</button><br>
+                                <span class="material-symbols-outlined" id = "am21">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><br>">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "eqe1" data-value="1" data-index="20">1</button> 
+                                    <button class = "btn btn-key" id = "eee1" data-value="2" data-index="20">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ete1" data-value="3" data-index="20">3</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "eqe2" data-value="1" data-index="20">1</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "eee2" data-value="2" data-index="20">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "ete2" data-value="3" data-index="20">3</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+                            </div>
+                            <div class="mainbar" id = "m13" style="display: none">   <!--Needs more exact data-->
+                                <button class = "btn btn-head" id="b12" onclick="Open('m13')" type ="button">      12Pleural junction</button><br>
+                                <span class="material-symbols-outlined" id = "am13">chevron_right</span>
+                                <span class="material-symbols-outlined material-symbols-outlined-info" id = "am43" data-value="<h2>Epipleural fold</h2><br>">help</span>
+                                <div class="obj1">
+                                    <button class = "btn btn-key" id = "aaee32321" data-value="1" data-index="12">1</button> 
+                                    <button class = "btn btn-key" id = "aaae32321" data-value="2" data-index="12">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" >
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>  
+                                <div class="obj2">
+                                    <button class = "btn btn-key" id = "aaee32322" data-value="1" data-index="12">1</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    <button class = "btn btn-key" id = "aaae32322" data-value="2" data-index="12">2</button><br>
+                                    <img class = "img-res" src="/img/Defualt.png" ><br>
+                                    
+                                </div>
+    
+                                
+                            </div>
+                    </div>
+                    
+                 </nav>
+                 <div class="top3" id="top3">
+                    Remaining taxa
+                </div>
+                
+                <nav class="sidebar" id="sidebar">
+                    <div class="scrollbox" id = "specCont">
                        
                     </div>
-                </div>
-             </nav>    
-        </div>
-        
-        <div class="Refs">
-            
-            <h2 class = "Minor-title">References</h2>
-            <div class="line-1"></div>
-                  Achterberg, C. van. (1979). A revision of the subfamily zelinae auct. (Hymenoptera, Braconidae). Tijdschrift voor entomologie. 122, 241-479<br><br>
-                Shaw, M.R. (2010). Palaearctic Homolobinae (Hymenoptera: Braconidae) in the National Museums of Scotland, with host and distribution 
-                records and a key to British species. Entomologist's Gazette. 61, 43-51<br><br>
+                 </nav>    
+            </div>
+           
+            <div class="Refs">
                 
-
-            </div>   
-            <div class ="taxBox"><a class="taxa" href="Braconidae">Hymenoptera </a><a class="taxa" href="/html/Braconidae.html">Braconidae </a><a class="taxa" href="/html/Homolobinae.html">Homolobinae  </a></div>   
+                <h2 class = "Minor-title">References</h2>
+                <div class="line-1"></div>
+                Hinz. R.; Horstmann, K. (2004). Revision of the western Palearctic species of Dusona Cameron (Hymenoptera, Ichneumonidae, Campopleginae). SPIXIANA. Suppl. 29, 1-183<br><br>
+                Horstmann, K. (2009). Revision of the western Palearctic species of Dusona Cameron (Insecta, Hymenoptera, Ichneumonidae, Campopleginae). SPIXIANA. 32 (1), 45-110<br><br>
+                Meier, Noah I.; Urfer, Karin; Haraldseide, Håkon; Vårdal, Hege; Klopfstein, Seraina (2022). <a href="https://jhr.pensoft.net/article/83318/element/4/468/">
+                Open access in a taxonomic sense: a morphological and molecular guide to Western Palaearctic Dusona (Hymenoptera, Ichneumonidae)</a>. Journal of Hymenoptera Research. 91, 83-183<br><br>  
+                Dusona Cameron, 1901 <a href="https://www.dyntaxa.se/taxon/info/1014565?changeRoot=True">Dyntaxa.se</a>. Retrieved 13 February 2023   
+    
+                </div>   
+                <div class ="taxBox"><a class="taxa" href="Braconidae">Hymenoptera </a><a class="taxa" href="/html/Braconidae.html">Braconidae </a><a class="taxa" href="/html/Homolobinae.html">Homolobinae  </a></div>      
+        </div> 
+        
     </body>
     <script src="/js/DusonaKey.js"></script>
     <script src="/js/DusonaData.js"></script>

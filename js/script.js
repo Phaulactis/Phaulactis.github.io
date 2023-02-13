@@ -127,7 +127,7 @@ function Step(value, index, id) {
 	for (var i = 0; i < speciesOrg.length; ++i) { 	
 
 			if(i < speciesName.length){
-				
+				document.getElementById(i + "e").style.display = "block";
 				document.getElementById(i+ "e").hidden = false;
 				document.getElementById(i + "e").innerHTML = speciesName[i];
 				var file = speciesName[i];
@@ -138,7 +138,7 @@ function Step(value, index, id) {
 				document.getElementById(i + "e").href = file;
 			}
 			else{
-				document.getElementById(i + "e").hidden = true;
+				document.getElementById(i + "e").style.display = "none";
 			}
 
 

@@ -23,7 +23,9 @@ a:link {
   a:hover {
     color: hotpink;
   }
-
+  :root {
+    scrollbar-color: transparent transparent;
+  }
 #mainBack {
     position:relative; 
     display: fixed; 
@@ -54,18 +56,25 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-   
+    width: 100%;
+ 
 }
 
 ::-webkit-scrollbar{
     
-    width:  0px;
+    width: 10px;
   
 }
 
 ::-webkit-scrollbar-thumb{
 
-    background: rgb(190, 190, 190);
+    
+    background: rgb(182, 182, 182);
+}
+::-webkit-scrollbar-track{
+
+    background: rgba(255, 255, 255, 0);
+
     
 }
 .searhRes{
@@ -107,6 +116,18 @@ html, body{
    outline-style: solid;
    background-color: rgb(0, 150, 125);
   }
+
+.inp{
+    display: block;
+    width: 5em;
+    
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-size: 1em;
+   
+}
 #Menu{
 
     position: fixed;
@@ -220,10 +241,12 @@ html, body{
 .mainbar{
     
     margin-bottom: 0.5em; 
-    margin-right: 1em;
+    
+    margin-left: 0.5%;
+    
     background:rgb(230, 230, 230);
     float:left; 
-    width: 100%;
+    width: 99%;
     height: 3.25em;
     display:inline;
     text-align: center;
@@ -231,9 +254,11 @@ html, body{
     border-radius: 0.3em;
     padding: 0;
     position: relative;
-    
-
+    transition: max-height 0.1s ease;
 }
+
+
+
 
 .obj1{
    
@@ -250,31 +275,37 @@ html, body{
     background:rgb(230, 230, 230);
     margin: 0px 5%;
     padding: 0.5em;
-    margin-bottom: 1em;
+    padding-right: 0.5em;
+   
     width: auto;
-    height: 40em;
+    height: 80vh;
     flex-direction: column;
     float:left;
     border-radius: 0.5em;
     overflow: hidden;
     overflow-y:auto;
-   
+    padding-bottom: 0em;
+    margin-bottom: 1em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
 }
-
 .sidebar {
     
     background:rgb(230, 230, 230);
     padding: 0.5em;
     margin: 0px 5%;
     width: auto;
-    height: 21em;
-   
+    height: 60vh;
+    flex-direction: column;
     position:static;  
     border-radius: 0.5em;
     overflow: hidden;
     overflow-y:auto;
-
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
 }
+
+
 .top{
    
     background:rgb(87, 87, 87); 
@@ -289,7 +320,8 @@ html, body{
     border-radius: 0.3em; 
     position:relative;
     font-size: 1.3em;
-
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
     
 }
 
@@ -309,8 +341,45 @@ html, body{
     position:relative;
     font-size: 1.3em;
     display: none;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
 }
+#Big2{
 
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 200;
+    top: 10vh;
+    pointer-events: none; 
+   
+}
+#infoBig{
+    
+    width: auto;
+    padding: 1em;
+    z-index: 2;
+    vertical-align: middle;
+    text-align: left;
+    margin: auto;
+    background-color: rgb(243, 243, 243);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 0.4em;
+    color:rgb(12, 12, 12); 
+    pointer-events:all;
+    position: relative;
+    height: 80vh;
+    display: none;
+    overflow-y: scroll;
+}
 .top3{
     background:rgb(87, 87, 87); 
     color: rgb(243, 243, 243);
@@ -325,6 +394,8 @@ html, body{
     border-radius: 0.3em; 
     position:relative;
     font-size: 1.3em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
     
 }
 .reset{
@@ -354,12 +425,12 @@ html, body{
     text-align: left;
     border-radius: 0.2em;
     color:rgb(12, 12, 12);
-    transition: background-color 0.1s ease;
+    transition: background-color 0.2s ease;
 }
 
 .btn-key{
   
-    font-size: 0.9em;
+    font-size: 2.4vw;
     margin-left: -1px;
     margin-right: -1px;
     height: 3.5em;
@@ -375,28 +446,106 @@ html, body{
     padding-left: 1em;
     padding-right: 3em;
 }
-#specCont{
-    height: 20em;
-    display: flex;
-    flex-direction: column;
-   
+
+.specDiv{
+    margin-bottom: 0.5em; 
+    background:rgb(230, 230, 230);
+    height: 3em;
    
 }
+
 .btn-spec{
-    margin-top: -0.7em;
+   
     
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
     font-size: 1em;
     background-color: rgb(243, 243, 243);
-    width: 100%;
-    background-size: cover;
+    display: block;
+    height: 100%;
+    width:  99%;
+    margin: 0px 0px;
+    padding-top: 0.8em;
+    padding-left: 0.7em;
     border-width: 1px;
     border-style:solid;
     border-color: rgb(61, 61, 61);
     
+    
+    
 }
+
+@media (hover: none) {
+    ::-webkit-scrollbar{
+    
+        width: 0px;
+      
+    }
+   
+    .mainbar{
+    
+        margin-bottom: 0.5em; 
+        
+      
+        background:rgb(230, 230, 230);
+        float:left; 
+        margin-left: 1%;
+        height: 3.25em;
+        display:inline;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 0.3em;
+        padding: 0;
+        position: relative;
+        margin-right: -5em;
+        width: 98%;
+       
+    }
+    .leftbar {
+
+        background:rgb(230, 230, 230);
+        margin: 0px 5%;
+        padding-top: 0.5em;
+       
+        padding-left: 0%;
+        margin-bottom: 1em;
+       
+    }
+   
+    .sidebar {
+    
+        background:rgb(230, 230, 230);
+        padding: 0.01em;
+        padding-top: 0.5em;
+        margin: 0px 5%;
+        width: auto;
+        height: 30vh;
+        flex-direction: column;
+        position:static;  
+        border-radius: 0.5em;
+        overflow: hidden;
+        overflow-y:auto;
+    
+    }
+
+    .btn-spec{
+   
+    
+        font-size: 1em;
+        background-color: rgb(243, 243, 243);
+        display: block;
+        height: 100%;
+        width:  98%;
+        margin: 0px 0px;
+        padding-top: 0.8em;
+        padding-left: 0.7em;
+        border-width: 1px;
+        border-style:solid;
+        border-color: rgb(61, 61, 61);
+        margin-left: 1%;
+        
+        
+        
+    }
+  }
 .btn-head{
     white-space: pre-wrap;
     padding-top: 0.7em;
@@ -485,15 +634,45 @@ html, body{
 }
 
 .material-symbols-outlined{
-    
+    display: block;
     font-size: 2.2em;
     position: absolute;
     left: 0;
     top: 0.25em;
-    pointer-events: none;
+    pointer-events: auto;
     color: rgb(48, 48, 48);
+    pointer-events: none;
+    
     
 }
+.material-symbols-outlined-info{
+    
+    font-size: 2em;
+    position: absolute;
+    z-index: 100em;
+    
+    cursor:pointer;
+    
+    left :auto;
+    right: 0.2em;
+    top: 0.32em;
+    pointer-events: all;
+    color: rgba(0, 0, 0, 0.336);
+    
+}
+.test{
+    font-size: 2.2em;
+    position: absolute;
+    
+    
+    cursor:pointer;
+    background-color: aqua;
+   
+    
+    top: 0.55em;
+    
+    color: rgb(194, 38, 38);
+} 
 .img-res {
     
     width: 100%;
@@ -561,6 +740,7 @@ html, body{
 }
 
 .Refs{
+    margin-top: -3em;
     margin-left: 5%;
     margin-right: 5%;
     color:rgb(12, 12, 12);
@@ -617,6 +797,14 @@ html, body{
 }
 
 @media only screen and (min-width: 650px){
+    #Big2{
+
+       
+        width: 70%;
+        margin-left: 15%;
+       
+       
+    }
     #mainBack {
         position:relative; 
         display: fixed; 
@@ -643,10 +831,7 @@ html, body{
        background-color: rgba(0, 0, 0, 0);
        
     }
-    ::-webkit-scrollbar{
-        width:  10px;
-       
-    }
+    
     .taxBox{
         font-size: 1.1em;
     }
@@ -685,7 +870,7 @@ html, body{
     
     
     .btn-key{
-
+        font-size: 1.4vw;
         width: 49.67%;
        
     }
@@ -700,34 +885,40 @@ html, body{
 
     .leftbar {
 
-        height: 40em;
+        height: 90vh;
         margin: 0px 5%;
+       
         margin-bottom: 1em;
-        
     
     }
     .sidebar {
         
-        height: 30em;
+        height: 60vh;
         margin: 0px 5%;
+        margin-bottom: 1em;
             
     
     }
-    #specCont{
-        height: 29em;
-        
-        
-        padding-top: 0.7em;
-       
-    }
+
   
 }
 
 
 
 @media only screen and (min-width: 1281px){
+
+
+    #Big2{
+
+       
+        width: 60%;
+        margin-left: 20%;
+       
+       
+    }
+
     #mainBack{
-         
+    
         margin-top: -0.9em; 
         width: 100%;  
         margin-bottom: -10em;
@@ -784,7 +975,8 @@ html, body{
         border-radius: 0.3em; 
         position:relative;
         font-size: 1.3em;
-    
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
         
     }
     
@@ -803,18 +995,21 @@ html, body{
         border-radius: 0.3em; 
         position:relative;
         font-size: 1.3em;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
     }
 
     .top3{
        display: none;
-        
+       border-bottom-left-radius: 0em;
+       border-bottom-right-radius: 0em;
     }
     .leftbar {
 
-        height: 56em;
+        height: 90vh;
         margin: 0px 5%;
         margin-right: 2%;
-        margin-bottom: 1em;
+        
         width: 60%;
        
         
@@ -822,16 +1017,14 @@ html, body{
     }
     .sidebar {
         
-        height: 56em;
+        height: 90vh;
         margin: 0px 5%;
+        margin-bottom: 1em;
 
     }
-    #specCont{
-        height: 55em;
-        display: flex;
-        flex-direction: column;
-   
-        padding-top: 0.7em;
+    .btn-key{
+        font-size: 0.8vw;
+        width: 49.67%;
        
     }
    
