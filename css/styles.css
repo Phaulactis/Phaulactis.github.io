@@ -37,22 +37,68 @@ a:link {
      text-align: center; 
     
     background-size: cover; 
-    background-image:url('/img/Dusona falcator.png'); 
+   
     background-position-x:  40%;
     
     
 }
+.keyBox{
+   
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    flex-wrap: wrap;
+    padding: 2vh;
+    align-items: flex-start;
+}
+.keyCube{
+    display: block;
+    background-color: rgb(33, 59, 93);
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 0.4em;
+    background-image: url("/img/Defualt.png");
+    background-size: cover;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+}
+
+.keyCube:hover .overKeyBox{
+   opacity: 1;
+}
+.overKeyBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    background-color: rgba(193, 193, 193, 0.248);
+    
+  }
+  
+.about{
+    width:70%; 
+    border-radius: 100em;
+    margin-left: 15%;
+    margin-top: 3vh;
+}
 #sercCont{
-    top: 60vh; width: 70%; height: 2em; position: fixed; left: 15%;
+    top: 60vh; width:calc(25% + 100px); height: 2em; position: absolute;   left: 50%;
+    transform: translateX(-50%);
 }
 
 #searchRes{
-    max-height: 34vh;
+   
     background-color: rgba(243, 243, 243, 0.692);
     margin-bottom: 20em
  }
 html, body{
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(36, 36, 36);
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -70,6 +116,12 @@ html, body{
 
     
     background: rgb(182, 182, 182);
+}
+body::-webkit-scrollbar-track{
+
+    background: rgba(207,207,207);
+
+    
 }
 ::-webkit-scrollbar-track{
 
@@ -126,21 +178,23 @@ html, body{
     margin-right: 0.2em;
     text-align: center;
     font-size: 1em;
+    background-color: rgb(248, 248, 248);
    
 }
 #Menu{
 
     position: fixed;
-    background-color: rgb(44, 44, 44);
-    background: linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(44,44,44,1) 28%, rgba(54,54,54,1) 100%);
+   
+   
     height: 100%;
     width: 0em;
     z-index: 2;
     overflow: hidden;
-    transition: width 0.2s ease;
+    transition: left 0.2s ease;
     min-height: 38em;
-    background: rgb(64,64,64);
-    background: linear-gradient(0deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 40%, rgba(44,44,44,1) 80%, rgba(44,44,44,1) 100%);
+    background: rgb(17, 17, 17);
+    left: -17em;
+    width: 250px;
        
 }
 #Overlay{
@@ -157,29 +211,30 @@ html, body{
     vertical-align: bottom;
     display: flex;
     z-index: 5;
-    margin: 2em;
-    margin-left: 3em;
-    margin-bottom: 4em;
+    
+    margin-left: 2.5em;
+    margin-bottom: 5vh;
     font-size: 1.1em;
-    white-space: nowrap
+    white-space: nowrap;
+    
 }
 #Contact{
 
     position: absolute;
-    bottom: 2em;
+    bottom:  4em;
 }
 #Twitter{
 
     position: absolute;
-    bottom:  1.5em;
-    left: 3em;
+    bottom: 20%;
+    left: 20%;
     cursor: pointer;
 }
 #Youtube{
 
     position: absolute;
-    bottom: 1.5em;
-    left: 8em;
+    bottom: 20%;
+    right: 20%;
     cursor: pointer;
 }
 #Phaulactis{
@@ -215,8 +270,8 @@ html, body{
 .Title{
     padding-left: 2em;
     padding-right: 2em;
-    background: rgb(64,64,64);
-    background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
+    background: rgb(32, 32, 32);
+   
     color: rgb(243, 243, 243);
     padding-bottom: 5px;
     
@@ -229,7 +284,10 @@ html, body{
     vertical-align: middle;
  
 }
-
+body {
+    background-color: rgb(207, 207, 207);
+  
+  }
 .Main{
 
     background-color: rgb(207, 207, 207);
@@ -429,8 +487,8 @@ html, body{
 }
 
 .btn-key{
-  
-    font-size: 2.4vw;
+    margin-bottom: 0.1em;
+    font-size: calc(0.6em + 1vw);
     margin-left: -1px;
     margin-right: -1px;
     height: 3.5em;
@@ -473,13 +531,22 @@ html, body{
     
 }
 
+
 @media (hover: none) {
     ::-webkit-scrollbar{
     
         width: 0px;
       
     }
-   
+    #sercCont{
+        top: 20vh; width:calc(25% + 100px); height: 2em; position: absolute;   left: 50%;
+        transform: translateX(-50%);
+    }
+    #searchRes{
+        max-height: 70vh;
+        background-color: rgba(243, 243, 243, 0.692);
+        margin-bottom: 20em
+     }
     .mainbar{
     
         margin-bottom: 0.5em; 
@@ -683,9 +750,18 @@ html, body{
     border-color: rgb(61, 61, 61);
     
 }
+.img-res2 {
+    
+    width: 99.5%;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(61, 61, 61);
+    
+}
 .taxBox{
-    background: rgb(64,64,64);
-    background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
+    background: rgb(36, 36, 36);
     color: rgb(243, 243, 243);
     width: 100%;
     vertical-align: middle;
@@ -703,8 +779,7 @@ html, body{
     
 }
 .taxBox2{
-    background: rgb(64,64,64);
-    background: linear-gradient(309deg, rgba(64,64,64,1) 0%, rgba(44,44,44,1) 30%, rgba(44,44,44,1) 70%, rgba(64,64,64,1) 100%);
+    background: rgb(36, 36, 36);
     color: rgb(243, 243, 243);
     width: 100%;
     padding-top: 1em;
@@ -740,7 +815,7 @@ html, body{
 }
 
 .Refs{
-    margin-top: -3em;
+   
     margin-left: 5%;
     margin-right: 5%;
     color:rgb(12, 12, 12);
@@ -805,6 +880,15 @@ html, body{
        
        
     }
+    .about{
+        width:55%; 
+        margin-left: 22.5%;
+    }
+    .keyCube{
+        background-color: rgb(33, 59, 93);
+        width: 10.5em;
+        height: 10.5em;
+    }
     #mainBack {
         position:relative; 
         display: fixed; 
@@ -819,9 +903,7 @@ html, body{
         max-height: 36vh;
         background-color: rgba(243, 243, 243, 0.692);
      }
-    #sercCont{
-        top: 60vh; width: 40%; position: fixed; left: 30%;
-    }
+   
     #mainBack ::-webkit-scrollbar{
 
         width: 0px;
@@ -839,7 +921,7 @@ html, body{
         font-size: 1.1em;
     }
     .Title{
-        background-color: rgb(57, 57, 57);
+      
          color: rgb(241, 241, 241);
          padding-bottom: 5px;
          
@@ -870,7 +952,7 @@ html, body{
     
     
     .btn-key{
-        font-size: 1.4vw;
+        font-size: calc(0.2em + 0.9vw);
         width: 49.67%;
        
     }
@@ -882,7 +964,7 @@ html, body{
         
         
     }
-
+    
     .leftbar {
 
         height: 90vh;
@@ -906,7 +988,15 @@ html, body{
 
 
 @media only screen and (min-width: 1281px){
-
+    .about{
+        width:40%; 
+        margin-left: 30%;
+    }
+    .keyCube{
+        background-color: rgb(33, 59, 93);
+        width: 11.5em;
+        height: 11.5em;
+    }
 
     #Big2{
 
@@ -927,7 +1017,7 @@ html, body{
         height: auto;
         background-size:cover; 
         
-        background-image:url('/img/Dusona falcator.png'); 
+      
         background-position: center;
         
     }
@@ -941,11 +1031,9 @@ html, body{
        background-color: rgba(0, 0, 0, 0);
        
     }
-    #sercCont{
-        top: 65vh;  width: 40%; height: 2em; position: fixed; left: 30%;
-    }
+   
     .Title{
-        background-color: rgb(57, 57, 57);
+       
          color: rgb(243, 243, 243);
          padding-bottom: 5px;
          padding-Top: 0;
@@ -1023,7 +1111,7 @@ html, body{
 
     }
     .btn-key{
-        font-size: 0.8vw;
+        font-size: calc(0.3em + 0.5vw);
         width: 49.67%;
        
     }
