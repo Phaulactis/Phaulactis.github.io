@@ -15,9 +15,13 @@ var uncertType = 0
 const scrollableDiv = document.getElementById("leftbar");
 const scrollableDiv2 = document.getElementById("sidebar");
 const body = document.body;
-
+let genus = "";
 window.onload= function(){
-	scrollableDiv.style.overflowY = "scroll";
+	if('ontouchstart' in window){
+
+	}
+	else{
+		scrollableDiv.style.overflowY = "scroll";
 	scrollableDiv.style.paddingRight = "0em"
 	scrollableDiv2.style.overflowY = "scroll";
 	scrollableDiv2.style.paddingRight = "0em"
@@ -27,10 +31,16 @@ window.onload= function(){
   document.body.style.overflowY = "scroll";
   document.body.style.overflow = "auto";
   document.body.style.overflowX = "hidden";
+	}
+	
+
+
 	species = speciesOrg;
 	species.pop()
 	
 	speciesName = speciesNames;
+	genus = speciesName[0].split(" ")[0]
+	
 	questions.forEach(element => {
 		if(element != "m1"){
 			Open(element);
@@ -46,12 +56,11 @@ window.onload= function(){
 		if(speciesOrg[i].length !== 0){
 			
 			if(document.getElementById("specCont").innerHTML[26] !== "<"){
-				document.getElementById("specCont").innerHTML += "<div class='specDiv' ><a class = 'btn btn-spec' href='/html/homolobus_truncator.html' style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
+				document.getElementById("specCont").innerHTML += "<div class='specDiv' ><a class = 'btn btn-spec' href='/html/" + genus + "/" + speciesName[i].replace(" ", "_") + ".html'" + "style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
 			}
 			else{
-				document.getElementById("specCont").innerHTML += "<br><div class='specDiv' ><a class = 'btn btn-spec' href='/html/homolobus_truncator.html' style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
+				document.getElementById("specCont").innerHTML += "<br><div class='specDiv' ><a class = 'btn btn-spec' href='/html/" + genus + "/" + speciesName[i].replace(" ", "_") + ".html'" + "style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
 			}
-			
 		}
 		
 	}
@@ -68,8 +77,20 @@ window.onload= function(){
 				
 				if(steps[i] === -1){
 					
-					document.getElementById(questions[i]).getElementsByClassName("btn btn-head")[0].style.backgroundColor = "rgb(243, 243, 243)";
-					
+					dom = document.getElementById(questions[i])
+					dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor = "rgb(243, 243, 243)";
+					let subs = dom.getElementsByClassName("btn btn-key")
+					let swit = dom.getElementsByClassName("btn btn-spec")
+					for (let e = 0; e < subs.length; e++) {
+						
+						if (subs[e].style.backgroundColor !== green) {
+							subs[e].style.backgroundColor = "rgb(243, 243, 243)"; 
+						  }
+					}
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor; 
+					}
 				}
 				
 			}
@@ -79,14 +100,28 @@ window.onload= function(){
 			
 			if(questions[results[i]] !== undefined){
 				if(steps[i] === -1){
-					document.getElementById(questions[results[i]]).getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
-					
+					dom = document.getElementById(questions[results[i]])
+					dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
+					let subs = dom.getElementsByClassName("btn btn-key")
+					let swit = dom.getElementsByClassName("btn btn-spec")
+					for (let e = 0; e < subs.length; e++) {
+						
+						if (subs[e].style.backgroundColor !== green) {
+							subs[e].style.backgroundColor = grey; 
+						  }
+					}
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor; 
+					}
 				}
 				
 			}
 		}
 		
 	}
+	
+	
 }
 function Reset(){
 
@@ -186,6 +221,9 @@ function Step(value, index, id) {
 		
 	}
 	else{
+		if (typeof myVar !== 'undefined') {
+			console.log('myVar is undefined');
+		  }
 		if(steps[index] === value ){
 		
 			steps[index] = -1;
@@ -220,6 +258,14 @@ function Step(value, index, id) {
 					document.getElementById(iDb + "2").style.backgroundColor = green;
 				}
 				document.getElementById("b"+index).style.backgroundColor = green;
+				dom = document.getElementById(questions[index])
+				
+				dom.getElementsByClassName("btn btn-head")[0]
+				let swit = dom.getElementsByClassName("btn btn-spec")
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = green; 
+					}
 			}
 			else if(steps[index].indexOf(value) < 0){
 				if(document.getElementById(questions[index]).innerHTML.indexOf("number") > -1){
@@ -232,6 +278,14 @@ function Step(value, index, id) {
 				
 	
 				document.getElementById("b"+index).style.backgroundColor = green;
+				dom = document.getElementById(questions[index])
+				
+				dom.getElementsByClassName("btn btn-head")[0]
+				let swit = dom.getElementsByClassName("btn btn-spec")
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = green; 
+					}
 				if(butID !== ""){
 					iDb = butID.slice(0, -1) 
 					document.getElementById(iDb + "1").style.backgroundColor = green;
@@ -266,7 +320,7 @@ function Step(value, index, id) {
 	 for (let i = 0; i < species.length; i++) {
 		if(species[i].length !== 0){
 			
-			document.getElementById("specCont").innerHTML += "<div class='specDiv' ><a class = 'btn btn-spec' href='/html/homolobus_truncator.html' style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
+			document.getElementById("specCont").innerHTML += "<div class='specDiv' ><a class = 'btn btn-spec' href='/html/" + genus + "/" + speciesName[i].replace(" ", "_") + ".html'" + "style='color:#0c0c0c' id =" + i + 'e '  + "type ='button'>"+ speciesName[i] +"</a></div>"
 		}
 		
 	}
@@ -284,7 +338,21 @@ function Step(value, index, id) {
 			
 			if(steps[i] === -1){
 					
-				document.getElementById(questions[i]).getElementsByClassName("btn btn-head")[0].style.backgroundColor = "rgb(243, 243, 243)";
+				dom = document.getElementById(questions[i])
+				dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor = "rgb(243, 243, 243)";
+					let subs = dom.getElementsByClassName("btn btn-key")
+					let swit = dom.getElementsByClassName("btn btn-spec")
+					for (let e = 0; e < subs.length; e++) {
+						
+						if (subs[e].style.backgroundColor !== green) {
+							subs[e].style.backgroundColor = "rgb(243, 243, 243)"; 
+						  }
+					}
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = "rgb(243, 243, 243)"; 
+						
+					}
 				
 			}
 		}
@@ -292,7 +360,21 @@ function Step(value, index, id) {
 			
 			if(questions[results[i]] !== undefined){
 				if(steps[results[i]] === -1){
-					document.getElementById(questions[results[i]]).getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
+					dom = document.getElementById(questions[results[i]])
+					dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
+					let subs = dom.getElementsByClassName("btn btn-key")
+					let swit = dom.getElementsByClassName("btn btn-spec")
+					if(swit.length > 0){
+						swit[0].style.backgroundColor = grey; 
+						
+					}
+					for (let e = 0; e < subs.length; e++) {
+						
+						if (subs[e].style.backgroundColor !== green) {
+							subs[e].style.backgroundColor = grey; 
+						  }
+					}
+					
 					
 				}
 			
@@ -303,10 +385,24 @@ function Step(value, index, id) {
 	else{
 		for (let i = 0; i < questions.length; i++) {
 			
-			document.getElementById(questions[i]).getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
+			dom = document.getElementById(questions[i])
+			dom.getElementsByClassName("btn btn-head")[0].style.backgroundColor = grey
+					let subs = dom.getElementsByClassName("btn btn-key")
+					let swit = dom.getElementsByClassName("btn btn-spec")
+					if(swit.length > 0){
+						
+						swit[0].style.backgroundColor = grey; 
+					}
+					for (let e = 0; e < subs.length; e++) {
+						
+						if (subs[e].style.backgroundColor !== green) {
+							subs[e].style.backgroundColor = grey; 
+						  }
+					}
+					
 		}
 	}
-	//removes all questions that don't have values for everything
+	
 	
 	 
 }
@@ -438,7 +534,7 @@ function ArrayComp(as,  bs){
 			}
 		}
 	
-
+		localStorage.setItem('key', steps);
 	  
 	}
 	
@@ -555,45 +651,50 @@ function Cull(array){
 	  }));
 }
 
+if ('ontouchstart' in window) {
+	
+	  console.log("onTuch")
+}
+else{
+	scrollableDiv.addEventListener("mouseenter", function(event) {
+		scrollableDiv.style.overflowY = "scroll";
+		scrollableDiv.style.paddingRight = "0em"
+		scrollableDiv2.style.overflowY = "scroll";
+		scrollableDiv2.style.paddingRight = "0em"
+		document.body.style.overflow = "hidden";
+	   // body.style.width = `${body.offsetWidth}px`;
+	  
+	  });
+	  
+	  scrollableDiv.addEventListener("mouseleave", function(event) {
+		  scrollableDiv.style.overflowY = "scroll";
+		  scrollableDiv2.style.overflowY = "scroll";
+		document.body.style.overflowY = "scroll";
+		document.body.style.overflow = "auto";
+		document.body.style.overflowX = "hidden";
+	  //  body.style.width = "100%";
+	  
+	  });
+	  scrollableDiv2.addEventListener("mouseenter", function(event) {
+		  scrollableDiv.style.overflowY = "scroll";
+		  scrollableDiv.style.paddingRight = "0em"
+		  scrollableDiv2.style.overflowY = "scroll";
+		  scrollableDiv2.style.paddingRight = "0em"
+		  document.body.style.overflow = "hidden";
+		 // body.style.width = `${body.offsetWidth}px`;
+		
+		});
+		
+		scrollableDiv2.addEventListener("mouseleave", function(event) {
+			scrollableDiv.style.overflowY = "scroll";
+			scrollableDiv2.style.overflowY = "scroll";
+		  document.body.style.overflowY = "scroll";
+		  document.body.style.overflow = "auto";
+		  document.body.style.overflowX = "hidden";
+		//  body.style.width = "100%";
+		
+		});
+}
 
-
-scrollableDiv.addEventListener("mouseenter", function(event) {
-  scrollableDiv.style.overflowY = "scroll";
-  scrollableDiv.style.paddingRight = "0em"
-  scrollableDiv2.style.overflowY = "scroll";
-  scrollableDiv2.style.paddingRight = "0em"
-  document.body.style.overflow = "hidden";
- // body.style.width = `${body.offsetWidth}px`;
-
-});
-
-scrollableDiv.addEventListener("mouseleave", function(event) {
-	scrollableDiv.style.overflowY = "scroll";
-	scrollableDiv2.style.overflowY = "scroll";
-  document.body.style.overflowY = "scroll";
-  document.body.style.overflow = "auto";
-  document.body.style.overflowX = "hidden";
-//  body.style.width = "100%";
-
-});
-scrollableDiv2.addEventListener("mouseenter", function(event) {
-	scrollableDiv.style.overflowY = "scroll";
-	scrollableDiv.style.paddingRight = "0em"
-	scrollableDiv2.style.overflowY = "scroll";
-	scrollableDiv2.style.paddingRight = "0em"
-	document.body.style.overflow = "hidden";
-   // body.style.width = `${body.offsetWidth}px`;
-  
-  });
-  
-  scrollableDiv2.addEventListener("mouseleave", function(event) {
-	  scrollableDiv.style.overflowY = "scroll";
-	  scrollableDiv2.style.overflowY = "scroll";
-	document.body.style.overflowY = "scroll";
-	document.body.style.overflow = "auto";
-	document.body.style.overflowX = "hidden";
-  //  body.style.width = "100%";
-  
-  });
 
 

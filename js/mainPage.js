@@ -7,14 +7,37 @@ let ind = 0
 let leng = 0
 let selecting = false
 let link = ""
+let change = 0;
+const backgroundImages = ["/img/Dusona\ alpinaB.png", "/img/Dusona\ falcator.png"]
+doe = false;
+
+window.onload= function(){
+ randomImage()
+}
+let last = 0;
+setInterval(function() {
+ // randomImage()
+}, 20000);
+
+function randomImage(){
+  let randomInt = 0
+  randomInt = Math.floor(Math.random() * (backgroundImages.length - 1 - 0 + 1));
+  last = randomInt
+  
+  document.getElementById("backgr").style.backgroundImage = "url('/img/Dusona\ falcator.png')"
+
+  document.getElementById("backgr").style.backgroundImage = "url(" + "'" +  backgroundImages[randomInt]+ "'" + ")"
+}
+
+
 searc.addEventListener('keyup', e=> {
   
-    console.log(Dusona_bicoloripes)
+    
     k = e.key
    
     if(k !== "ArrowUp" && k !== "ArrowDown"){
       if(k !== "ArrowRight" && k !== "ArrowLeft" && k !=="Enter"){
-        theThing()
+        change = 1;
       }
     }
     else{
@@ -45,38 +68,55 @@ searc.addEventListener('keyup', e=> {
    
    }
    ,1000);
+   
 function theThing(){
-    
-  let number = 0;
+  
+ num = 0;
   if(searc.value.length > 0){
     
     let a = [];
+    let c = []
       search = searc.value.toLowerCase()
       searchble.forEach(element => {
+        AddTo()
       fetch(element)
       .then(response => response.text())
       .then(html => {
         let parser = new DOMParser();
         let doc = parser.parseFromString(html, "text/html");
         let title = doc.getElementsByTagName("title")[0].textContent;
+       
         if (title.toLocaleLowerCase().includes(search)) {
           
           if(title.length === search.length){
             a.unshift( "<div class='searhRes' style='margin-bottom: 1px;'>" + "<a id='not' class='sercLink' style='color:#0c0c0c; padding-left: 0.8em; ;' href=" + element + ">" + title + "</a>" + "</div>")
+            num += 1;
+           
+            
           }
           else{
             a.push("<div class='searhRes' style='margin-bottom: 1px;'>" + "<a id='not' class='sercLink' style='color:#0c0c0c; padding-left: 0.8em; margin-bottom: -10em ;' href=" + element + ">" + title + "</a>" + "</div>")
+            num += 1;
+            
+           
           }
-          
+          AddTo()
         }
+       
       })
      .catch(function() {
         console.log("error");
       });
-    
+    c.sort()
+   
   });
   
-  setTimeout(()=> {
+
+  //viusalizes the results
+
+  function AddTo()
+  {
+    doe = false;
     searcRes.innerHTML = ""
     a = a.sort((a, b) => a.length - b.length)
     if(a.length > 0){
@@ -101,8 +141,8 @@ function theThing(){
     ind = 0;
     selecting = false;
     
- }
- ,100);
+  }
+
   }
   else{
     searcRes.innerHTML = ""
@@ -110,6 +150,16 @@ function theThing(){
   }
 
 }
+
+//searches every 100
+setInterval(function() {
+  if( change > 0){
+    theThing()
+    change = 0
+  }
+  
+}, 100);
+
 document.addEventListener("click", e=> {
   checkPageFocus(searcRes.innerHTML)
 
